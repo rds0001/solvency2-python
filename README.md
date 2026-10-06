@@ -7,6 +7,45 @@ Use individual formulas in scripts and notebooks, supply your own data, inspect
 parameters and correlations, and retain the source and scenario trail of each
 calculation. A complete insurer model or workflow is not required.
 
+## What this makes easier
+
+Solvency II work involves more than producing a single capital number. Analysts
+need reusable calculations, regulatory tables, controlled assumptions and a way
+to explain how each result was obtained. This library brings those building
+blocks together in one Python toolkit:
+
+- **Calculate just what you need.** Call a single shock, valuation, aggregation,
+  own-funds or MCR function without setting up an application or insurer model.
+- **Use regulatory tables without transcribing them yourself.** Inspect included
+  parameters, labelled correlation matrices and supported catastrophe tables,
+  with their source references and explicit rule profiles.
+- **Work with your own data and assumptions.** Load local curves and supply
+  cashflows, exposures or credit inputs. Change supported parameters and matrix
+  entries per scenario, without modifying installed files or global defaults.
+- **Explain and reproduce a result.** Calculations return the value, units,
+  formula identifier, sources, context, input hashes and applicable override
+  records—not just an unexplained number.
+- **Start from runnable examples.** Explore 12,382 fixed reference cases and 227
+  integration portfolios, then adapt the documented inputs to your own work.
+- **Connect related tasks.** Use components for technical provisions, market and
+  underwriting risks, counterparty risk, capital resources, groups and reporting
+  in the same toolkit. Compose selected functions into a dependency workflow
+  when useful; direct function calls remain the primary interface.
+
+The scope is **399 calculation functions across 21 domain modules**, plus local
+input, scenario and discovery helpers. Explicit baseline and 2027 rule profiles
+support version-aware work within their documented method coverage. Reporting
+resources and checks complement the calculation APIs; they are not an automatic
+filing service. All user documentation is also available from an installed wheel.
+
+For actuarial analysts, risk teams, researchers and developers, the practical
+benefit is less repeated formula/table plumbing and a shared, inspectable basis
+for notebooks, sensitivity analyses, validation and internal tools. The runtime
+is fully offline: no provider account, hosted engine or telemetry is required.
+Source code is GPL-3.0-or-later; data attributions are documented separately.
+
+## Included scope
+
 The package contains the accepted calculation baseline: **399 calculations,
 421 inherited public symbols, 12,382 fixed core reference cases and 227
 integration portfolios**, plus additional reporting references. It preserves
@@ -22,8 +61,17 @@ for production calculations. Regulatory parameters and correlations are retained
 ## Install locally
 
 Python 3.10 or later is required; Python 3.10 is the tested release environment.
-This is a local candidate, not a claim of availability on PyPI. Install the
-wheel supplied in `dist/` (substitute its actual filename):
+The source is available on GitHub; this is not a claim of availability on PyPI.
+Install from a checkout (pip obtains build tooling if needed):
+
+```sh
+git clone https://github.com/rds0001/solvency2-python.git
+cd solvency2-python
+python -m pip install .
+```
+
+For an offline installation, first build or obtain the wheel as described in
+[local build instructions](docs/DEVELOPMENT.md), then install it without an index:
 
 ```sh
 python -m pip install --no-index --no-deps dist/solvency2_python-0.5.0-py3-none-any.whl
