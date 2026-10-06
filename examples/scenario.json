@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "overrides": [{
+    "resource": "profile.json",
+    "path": ["scalars", "intangible", "value"],
+    "value": 0.7,
+    "reason": "Synthetic sensitivity"
+  }]
+}

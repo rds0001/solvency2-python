@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "solvency2-python"
+version = "0.5.0"
+description = "Offline, traceable Solvency II formulas, parameters and synthetic references"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "GPL-3.0-or-later"}
+authors = [{name = "RiskDataScience GmbH", email = "riskdatascience@web.de"}]
+dependencies = []
+
+[project.urls]
+Source = "https://github.com/rds0001/solvency2-python"
+Documentation = "https://github.com/rds0001/solvency2-python/blob/main/README.md"
+Issues = "https://github.com/rds0001/solvency2-python/issues"
+
+[project.optional-dependencies]
+optimization = ["scipy>=1.12"]
+statistics = ["scipy>=1.12"]
+test = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools]
+license-files = ["LICENSE", "NOTICE", "LICENSES/*.txt"]
+
+[tool.setuptools.package-data]
+solvency2 = ["py.typed", "resources/*.json", "resources/documentation/*.md"]
+"solvency2._core" = ["resources/*.json", "resources/*.json.gz"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"

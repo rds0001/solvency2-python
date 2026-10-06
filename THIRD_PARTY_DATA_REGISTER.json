@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "inventory_date": "2026-10-06",
+  "package_version": "0.5.0",
+  "edition": "PUBLIC_REGULATORY_TOOLKIT_WITH_SYNTHETIC_MARKET_EXAMPLES",
+  "original_code_and_demo_data": {
+    "owner": "RiskDataScience GmbH",
+    "license": "GPL-3.0-or-later"
+  },
+  "eu_regulatory_extracts": {
+    "owner": "European Union",
+    "license": "CC-BY-4.0",
+    "source": "https://eur-lex.europa.eu/",
+    "reuse_terms": "https://eur-lex.europa.eu/content/legal-notice/legal-notice.html",
+    "changes": "Selected numerical tables normalized to JSON; article/annex references and source hashes retained."
+  },
+  "eiopa_guidance": {
+    "owner": "EIOPA",
+    "reuse_terms": "https://www.eiopa.europa.eu/legal-notice_en",
+    "notices": "THIRD_PARTY_NOTICES.md"
+  },
+  "reporting_derivatives": {
+    "owner": "EIOPA",
+    "packaged_and_marked_on": "2026-10-06",
+    "modifications": "Selection/extraction from database, workbook and XML sources; normalization into JSON/gzip. Not official EIOPA release files.",
+    "license_url": "https://www.eiopa.europa.eu/system/files/2019-09/eiopa_dpm_and_taxonomy_license.pdf",
+    "license_version": "1.4 (07/10/2025)",
+    "license_sha256": "403a549df28f796bc39e989c2c44d2c4b8fb5c48f40468e95257eec6f92e4e4e",
+    "originals_free_at": "https://www.eiopa.europa.eu/tools-and-data/supervisory-reporting-dpm-and-xbrl_en",
+    "source_archives": {
+      "reporting_2_8_2_catalog.json": {
+        "archive_path": "eu/reporting/current/2.8.2/EIOPA_SolvencyII_DPM_Database_2.8.2.zip",
+        "archive_sha256": "481a9b40a97162ba7ab11b34ebfbed231fb797b00cad9a430bcfbb9929110e10",
+        "database_member": "EIOPA_SolvencyII_DPM_Database_2.8.2.db",
+        "database_sha256": "09f11922e4698657067fd9d0757670a42c6a2ccc7b9288cb19b289cb284d7769",
+        "source_id": "SRC-0457"
+      },
+      "reporting_2_8_2_hotfix_catalog.json": {
+        "archive_path": "eu/reporting/current/2.8.2-hotfix/EIOPA_SolvencyII_DPM_Database_2.8.2_Hotfix.zip",
+        "archive_sha256": "7419cf6de32b5a5a94d31e23db281739d0c3b6f0d8b028823f8fc51115d8b732",
+        "database_member": "EIOPA_SolvencyII_DPM_Database_2.8.2_Hotfix.db",
+        "database_sha256": "3d02e85d8f32c5f796066c834a25ada26bb83dc92d59e815cf2d30780269fcec",
+        "source_id": "SRC-0437"
+      },
+      "reporting_2_10_0_catalog.json": {
+        "archive_path": "eu/reporting/2027/EIOPA_Solvency_II_DPM_Database_2.10.0.zip",
+        "archive_sha256": "2cf58ed196a7a770d68d2f0b93b7bea5260285391decadcad73fe4bd2e6f1d3e",
+        "database_member": "EIOPA_Solvency_II_2.10.0_DPM_SQL_Database.db",
+        "database_sha256": "9faff113b66b62542e3559768636f2e033b72a3d8567dac254d8c7fc8778e83e",
+        "source_id": "SRC-0428"
+      }
+    },
+    "resource_sha256": {
+      "reporting_2_8_2_validation_status.json.gz": "a32e6eb504db29891fea8d144bd4e0d20c0b699aff10a8432515b99ae785262d",
+      "reporting_2_8_2_xbrl_preconditions.json.gz": "a5cfc8c3c3ccab3468cb07c0a3d7ed15999634ef9ff54dc6a78454c750bdc008",
+      "reporting_2_8_2_structure.json.gz": "66566fc4c5578565c58ca700a343a1852fee7bb8d39688d723e025044d685b52",
+      "reporting_2_8_2_cells.json.gz": "782280b6924e3e35a517438a870c5e9bda7de31072beb9140b1f0c4230acfa87",
+      "reporting_2_8_2_dictionary.json.gz": "f81e9fb627f2bf68aeaec3ef089f2b031df6df0653c62a8129faa35c2594aa78",
+      "reporting_2_8_2_rules.json.gz": "ab02dba631957911420e0fb25f7e5fc9ff065580c4811c055db8614d5b14dce9",
+      "reporting_2_8_2_catalog.json": "098efd04eefc39b9d6cec7b45b1d34bfd8f5eb0894c9200f9d741afa31bacc56",
+      "reporting_2_8_2_hotfix_validation_status.json.gz": "f1bf4388ef177f78a0b66899ca404d7324b4737b0faeb3d6e8d1a9a7e0a86f9c",
+      "reporting_2_8_2_hotfix_xbrl_preconditions.json.gz": "85ac945c756338bd68c37adf3127a21826f975418f04a473a9ae68ddc8933140",
+      "reporting_2_8_2_hotfix_structure.json.gz": "e80e5f590b642af5892f68af6d884cb3e5c2ba1f0ee2f749605d0ef511cf605c",
+      "reporting_2_8_2_hotfix_cells.json.gz": "e28e527b78ee78a449afdeb7777a746ac58d10e8e972646f33ab358bc98c7701",
+      "reporting_2_8_2_hotfix_dictionary.json.gz": "460bc027a577ce338a0b2e2e0fc08c31d3c66db3c4c4b2f1364a98fba42f1bb9",
+      "reporting_2_8_2_hotfix_rules.json.gz": "c5f76881ddb616989b79b1914d91a91012cc8f88fa9549d1872d0b9b014ff839",
+      "reporting_2_8_2_hotfix_catalog.json": "ad357b55e5548e94819a41608f2f9b4a7c25962ac007fef23ae01c0541634904",
+      "reporting_2_10_0_validation_status.json.gz": "b61d011976050759d33d2307e2436d14d7a2b840890dad8d578250dc7a5372d1",
+      "reporting_2_10_0_xbrl_preconditions.json.gz": "6f664431b7ad1a50fdf3f031638d36df4c9ce5f7db49fac614034d7e5b25d1c9",
+      "reporting_2_10_0_structure.json.gz": "a4022098a519d3caed45db2f83ad2ea1ded37bda5a84c4caedee79fdb7162b87",
+      "reporting_2_10_0_cells.json.gz": "34f183d3b04f2cbb59b3f84f99e67101e86a7b03ea8bcd1170ce31507f4b1eb2",
+      "reporting_2_10_0_dictionary.json.gz": "b4ca0f2c7a0d19bed943a837475083df360a8f28dd48722159c3be2841809659",
+      "reporting_2_10_0_rules.json.gz": "dc93552209b6623527773e85b7ab406c8dc0d922d609c11c68cd0d982735272b",
+      "reporting_2_10_0_catalog.json": "d5a818448de9990aeeb267aec0b339f0642b9eb90f62d920c6a6f4b8fdc7b712"
+    },
+    "terms": "Separate EIOPA license; preserve notices, license copy, change labels and derivative register; license-back/information obligations and third-party exceptions apply."
+  },
+  "market_data": {
+    "kind": "SYNTHETIC_DEMO",
+    "owner": "RiskDataScience GmbH",
+    "license": "GPL-3.0-or-later",
+    "resource": "solvency2/_core/resources/rfr_monthly.json",
+    "sha256": "f46a6cad6585dacde4b1bb43509a62c4c388862b249b2976a5e7777780d559b7",
+    "observed_market_data_included": false,
+    "dates_are_illustrative": true,
+    "creation": "Independent flat-rate constants and toy credit grids; arithmetic recipe included in resource.",
+    "production_inputs": "Explicit local user-supplied mappings or DiscountCurve JSON/CSV."
+  }
+}

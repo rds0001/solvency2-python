@@ -1,0 +1,402 @@
+{
+  "status": "SYNTHETIC_STRING_EXPRESSION_CASES_NOT_FULL_REPORTS",
+  "qualification": "Source-version-specific BV1247 expression only. Zero-filled LEIs are synthetic, not issued identifiers. Legacy rules permit alphabetic final characters through the original checksum fallback; preserved transparently, not repaired or endorsed as valid LEIs.",
+  "cases": [
+    {
+      "id": "strings-2.8.2-checksum-pass",
+      "technical_version": "2.8.2",
+      "validation_code": "BV1247",
+      "bindings": {
+        "v0": {
+          "text": "LEI/00000000000000000098"
+        }
+      },
+      "expected": true,
+      "binding_reference": "synthetic://explicit-text-binding-no-registered-identifier"
+    },
+    {
+      "id": "strings-2.8.2-checksum-fail",
+      "technical_version": "2.8.2",
+      "validation_code": "BV1247",
+      "bindings": {
+        "v0": {
+          "text": "LEI/00000000000000000097"
+        }
+      },
+      "expected": false,
+      "binding_reference": "synthetic://explicit-text-binding-no-registered-identifier"
+    },
+    {
+      "id": "strings-2.8.2-excluded-digits",
+      "technical_version": "2.8.2",
+      "validation_code": "BV1247",
+      "bindings": {
+        "v0": {
+          "text": "LEI/00000000000000000001"
+        }
+      },
+      "expected": false,
+      "binding_reference": "synthetic://explicit-text-binding-no-registered-identifier"
+    },
+    {
+      "id": "strings-2.8.2-bad-99",
+      "technical_version": "2.8.2",
+      "validation_code": "BV1247",
+      "bindings": {
+        "v0": {
+          "text": "LEI/00000000000000000099"
+        }
+      },
+      "expected": false,
+      "binding_reference": "synthetic://explicit-text-binding-no-registered-identifier"
+    },
+    {
+      "id": "strings-2.8.2-none-code",
+      "technical_version": "2.8.2",
+      "validation_code": "BV1247",
+      "bindings": {
+        "v0": {
+          "text": "None"
+        }
+      },
+      "expected": true,
+      "binding_reference": "synthetic://explicit-text-binding-no-registered-identifier"
+    },
+    {
+      "id": "strings-2.8.2-empty-text",
+      "technical_version": "2.8.2",
+      "validation_code": "BV1247",
+      "bindings": {
+        "v0": {
+          "text": ""
+        }
+      },
+      "expected": false,
+      "binding_reference": "synthetic://explicit-text-binding-no-registered-identifier"
+    },
+    {
+      "id": "strings-2.8.2-explicit-absence",
+      "technical_version": "2.8.2",
+      "validation_code": "BV1247",
+      "bindings": {
+        "v0": {
+          "absent": true
+        }
+      },
+      "expected": false,
+      "binding_reference": "synthetic://explicit-text-binding-no-registered-identifier"
+    },
+    {
+      "id": "strings-2.8.2-prefix-not-normalised",
+      "technical_version": "2.8.2",
+      "validation_code": "BV1247",
+      "bindings": {
+        "v0": {
+          "text": "lei/00000000000000000098"
+        }
+      },
+      "expected": false,
+      "binding_reference": "synthetic://explicit-text-binding-no-registered-identifier"
+    },
+    {
+      "id": "strings-2.8.2-trailing-newline",
+      "technical_version": "2.8.2",
+      "validation_code": "BV1247",
+      "bindings": {
+        "v0": {
+          "text": "LEI/00000000000000000098\n"
+        }
+      },
+      "expected": false,
+      "binding_reference": "synthetic://explicit-text-binding-no-registered-identifier"
+    },
+    {
+      "id": "strings-2.8.2-final-letters-source-difference",
+      "technical_version": "2.8.2",
+      "validation_code": "BV1247",
+      "bindings": {
+        "v0": {
+          "text": "LEI/000000000000000000AB"
+        }
+      },
+      "expected": true,
+      "binding_reference": "synthetic://explicit-text-binding-no-registered-identifier"
+    },
+    {
+      "id": "strings-2.8.2-unqualified-text",
+      "technical_version": "2.8.2",
+      "validation_code": "BV1247",
+      "bindings": {
+        "v0": {
+          "text": "synthetic-invalid"
+        }
+      },
+      "expected": false,
+      "binding_reference": "synthetic://explicit-text-binding-no-registered-identifier"
+    },
+    {
+      "id": "strings-2.8.2-hotfix-checksum-pass",
+      "technical_version": "2.8.2-hotfix",
+      "validation_code": "BV1247",
+      "bindings": {
+        "v0": {
+          "text": "LEI/00000000000000000098"
+        }
+      },
+      "expected": true,
+      "binding_reference": "synthetic://explicit-text-binding-no-registered-identifier"
+    },
+    {
+      "id": "strings-2.8.2-hotfix-checksum-fail",
+      "technical_version": "2.8.2-hotfix",
+      "validation_code": "BV1247",
+      "bindings": {
+        "v0": {
+          "text": "LEI/00000000000000000097"
+        }
+      },
+      "expected": false,
+      "binding_reference": "synthetic://explicit-text-binding-no-registered-identifier"
+    },
+    {
+      "id": "strings-2.8.2-hotfix-excluded-digits",
+      "technical_version": "2.8.2-hotfix",
+      "validation_code": "BV1247",
+      "bindings": {
+        "v0": {
+          "text": "LEI/00000000000000000001"
+        }
+      },
+      "expected": false,
+      "binding_reference": "synthetic://explicit-text-binding-no-registered-identifier"
+    },
+    {
+      "id": "strings-2.8.2-hotfix-bad-99",
+      "technical_version": "2.8.2-hotfix",
+      "validation_code": "BV1247",
+      "bindings": {
+        "v0": {
+          "text": "LEI/00000000000000000099"
+        }
+      },
+      "expected": false,
+      "binding_reference": "synthetic://explicit-text-binding-no-registered-identifier"
+    },
+    {
+      "id": "strings-2.8.2-hotfix-none-code",
+      "technical_version": "2.8.2-hotfix",
+      "validation_code": "BV1247",
+      "bindings": {
+        "v0": {
+          "text": "None"
+        }
+      },
+      "expected": true,
+      "binding_reference": "synthetic://explicit-text-binding-no-registered-identifier"
+    },
+    {
+      "id": "strings-2.8.2-hotfix-empty-text",
+      "technical_version": "2.8.2-hotfix",
+      "validation_code": "BV1247",
+      "bindings": {
+        "v0": {
+          "text": ""
+        }
+      },
+      "expected": false,
+      "binding_reference": "synthetic://explicit-text-binding-no-registered-identifier"
+    },
+    {
+      "id": "strings-2.8.2-hotfix-explicit-absence",
+      "technical_version": "2.8.2-hotfix",
+      "validation_code": "BV1247",
+      "bindings": {
+        "v0": {
+          "absent": true
+        }
+      },
+      "expected": false,
+      "binding_reference": "synthetic://explicit-text-binding-no-registered-identifier"
+    },
+    {
+      "id": "strings-2.8.2-hotfix-prefix-not-normalised",
+      "technical_version": "2.8.2-hotfix",
+      "validation_code": "BV1247",
+      "bindings": {
+        "v0": {
+          "text": "lei/00000000000000000098"
+        }
+      },
+      "expected": false,
+      "binding_reference": "synthetic://explicit-text-binding-no-registered-identifier"
+    },
+    {
+      "id": "strings-2.8.2-hotfix-trailing-newline",
+      "technical_version": "2.8.2-hotfix",
+      "validation_code": "BV1247",
+      "bindings": {
+        "v0": {
+          "text": "LEI/00000000000000000098\n"
+        }
+      },
+      "expected": false,
+      "binding_reference": "synthetic://explicit-text-binding-no-registered-identifier"
+    },
+    {
+      "id": "strings-2.8.2-hotfix-final-letters-source-difference",
+      "technical_version": "2.8.2-hotfix",
+      "validation_code": "BV1247",
+      "bindings": {
+        "v0": {
+          "text": "LEI/000000000000000000AB"
+        }
+      },
+      "expected": true,
+      "binding_reference": "synthetic://explicit-text-binding-no-registered-identifier"
+    },
+    {
+      "id": "strings-2.8.2-hotfix-unqualified-text",
+      "technical_version": "2.8.2-hotfix",
+      "validation_code": "BV1247",
+      "bindings": {
+        "v0": {
+          "text": "synthetic-invalid"
+        }
+      },
+      "expected": false,
+      "binding_reference": "synthetic://explicit-text-binding-no-registered-identifier"
+    },
+    {
+      "id": "strings-2.10.0-checksum-pass",
+      "technical_version": "2.10.0",
+      "validation_code": "BV1247",
+      "bindings": {
+        "v0": {
+          "text": "LEI/00000000000000000098"
+        }
+      },
+      "expected": true,
+      "binding_reference": "synthetic://explicit-text-binding-no-registered-identifier"
+    },
+    {
+      "id": "strings-2.10.0-checksum-fail",
+      "technical_version": "2.10.0",
+      "validation_code": "BV1247",
+      "bindings": {
+        "v0": {
+          "text": "LEI/00000000000000000097"
+        }
+      },
+      "expected": false,
+      "binding_reference": "synthetic://explicit-text-binding-no-registered-identifier"
+    },
+    {
+      "id": "strings-2.10.0-excluded-digits",
+      "technical_version": "2.10.0",
+      "validation_code": "BV1247",
+      "bindings": {
+        "v0": {
+          "text": "LEI/00000000000000000001"
+        }
+      },
+      "expected": false,
+      "binding_reference": "synthetic://explicit-text-binding-no-registered-identifier"
+    },
+    {
+      "id": "strings-2.10.0-bad-99",
+      "technical_version": "2.10.0",
+      "validation_code": "BV1247",
+      "bindings": {
+        "v0": {
+          "text": "LEI/00000000000000000099"
+        }
+      },
+      "expected": false,
+      "binding_reference": "synthetic://explicit-text-binding-no-registered-identifier"
+    },
+    {
+      "id": "strings-2.10.0-none-code",
+      "technical_version": "2.10.0",
+      "validation_code": "BV1247",
+      "bindings": {
+        "v0": {
+          "text": "None"
+        }
+      },
+      "expected": true,
+      "binding_reference": "synthetic://explicit-text-binding-no-registered-identifier"
+    },
+    {
+      "id": "strings-2.10.0-empty-text",
+      "technical_version": "2.10.0",
+      "validation_code": "BV1247",
+      "bindings": {
+        "v0": {
+          "text": ""
+        }
+      },
+      "expected": false,
+      "binding_reference": "synthetic://explicit-text-binding-no-registered-identifier"
+    },
+    {
+      "id": "strings-2.10.0-explicit-absence",
+      "technical_version": "2.10.0",
+      "validation_code": "BV1247",
+      "bindings": {
+        "v0": {
+          "absent": true
+        }
+      },
+      "expected": false,
+      "binding_reference": "synthetic://explicit-text-binding-no-registered-identifier"
+    },
+    {
+      "id": "strings-2.10.0-prefix-not-normalised",
+      "technical_version": "2.10.0",
+      "validation_code": "BV1247",
+      "bindings": {
+        "v0": {
+          "text": "lei/00000000000000000098"
+        }
+      },
+      "expected": false,
+      "binding_reference": "synthetic://explicit-text-binding-no-registered-identifier"
+    },
+    {
+      "id": "strings-2.10.0-trailing-newline",
+      "technical_version": "2.10.0",
+      "validation_code": "BV1247",
+      "bindings": {
+        "v0": {
+          "text": "LEI/00000000000000000098\n"
+        }
+      },
+      "expected": false,
+      "binding_reference": "synthetic://explicit-text-binding-no-registered-identifier"
+    },
+    {
+      "id": "strings-2.10.0-final-letters-source-difference",
+      "technical_version": "2.10.0",
+      "validation_code": "BV1247",
+      "bindings": {
+        "v0": {
+          "text": "LEI/000000000000000000AB"
+        }
+      },
+      "expected": false,
+      "binding_reference": "synthetic://explicit-text-binding-no-registered-identifier"
+    },
+    {
+      "id": "strings-2.10.0-unqualified-text",
+      "technical_version": "2.10.0",
+      "validation_code": "BV1247",
+      "bindings": {
+        "v0": {
+          "text": "synthetic-invalid"
+        }
+      },
+      "expected": false,
+      "binding_reference": "synthetic://explicit-text-binding-no-registered-identifier"
+    }
+  ]
+}

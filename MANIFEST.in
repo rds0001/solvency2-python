@@ -1,0 +1,9 @@
+include README.md LICENSE NOTICE GOLDEN_SOURCE.json
+include CHANGELOG.md DISCLAIMER.md SECURITY.md THIRD_PARTY_NOTICES.md
+recursive-include LICENSES *.txt
+include THIRD_PARTY_DATA_REGISTER.json
+recursive-include src *.py py.typed *.json *.json.gz *.md
+recursive-include docs *.md
+recursive-include examples *.py *.json *.csv
+recursive-include tests *.py
+global-exclude __pycache__ *.py[cod] .DS_Store

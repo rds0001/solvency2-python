@@ -1,0 +1,519 @@
+{
+  "status": "SYNTHETIC_TYPED_EXPRESSION_CASES_NOT_FULL_REPORTS",
+  "qualification": "Explicit already-bound atoms only; no schema/domain membership, default application or filing applicability certified. Foreign namespace case tests QName identity, not report admissibility.",
+  "cases": [
+    {
+      "id": "typed-2.8.2-forbidden-member",
+      "technical_version": "2.8.2",
+      "validation_code": "BV1339",
+      "bindings": {
+        "v0": {
+          "qname": {
+            "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/CU",
+            "local_name": "x7"
+          }
+        }
+      },
+      "expected": false,
+      "binding_reference": "synthetic://explicit-typed-atom-bindings"
+    },
+    {
+      "id": "typed-2.8.2-other-member",
+      "technical_version": "2.8.2",
+      "validation_code": "BV1339",
+      "bindings": {
+        "v0": {
+          "qname": {
+            "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/CU",
+            "local_name": "x5"
+          }
+        }
+      },
+      "expected": true,
+      "binding_reference": "synthetic://explicit-typed-atom-bindings"
+    },
+    {
+      "id": "typed-2.8.2-namespace-identity-only",
+      "technical_version": "2.8.2",
+      "validation_code": "BV1339",
+      "bindings": {
+        "v0": {
+          "qname": {
+            "namespace": "urn:synthetic-other",
+            "local_name": "x7"
+          }
+        }
+      },
+      "expected": true,
+      "binding_reference": "synthetic://explicit-typed-atom-bindings"
+    },
+    {
+      "id": "typed-2.8.2-present-required-member",
+      "technical_version": "2.8.2",
+      "validation_code": "BV1858",
+      "bindings": {
+        "v0": {
+          "text": "synthetic-reference"
+        },
+        "v1": {
+          "qname": {
+            "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AP",
+            "local_name": "x94"
+          }
+        }
+      },
+      "expected": true,
+      "binding_reference": "synthetic://explicit-typed-atom-bindings"
+    },
+    {
+      "id": "typed-2.8.2-present-wrong-member",
+      "technical_version": "2.8.2",
+      "validation_code": "BV1858",
+      "bindings": {
+        "v0": {
+          "text": "synthetic-reference"
+        },
+        "v1": {
+          "qname": {
+            "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AP",
+            "local_name": "x95"
+          }
+        }
+      },
+      "expected": false,
+      "binding_reference": "synthetic://explicit-typed-atom-bindings"
+    },
+    {
+      "id": "typed-2.8.2-absent-not-empty-string",
+      "technical_version": "2.8.2",
+      "validation_code": "BV1858",
+      "bindings": {
+        "v0": {
+          "absent": true
+        },
+        "v1": {
+          "qname": {
+            "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AP",
+            "local_name": "x95"
+          }
+        }
+      },
+      "expected": true,
+      "binding_reference": "synthetic://explicit-typed-atom-bindings"
+    },
+    {
+      "id": "typed-2.8.2-empty-string-still-present",
+      "technical_version": "2.8.2",
+      "validation_code": "BV1858",
+      "bindings": {
+        "v0": {
+          "text": ""
+        },
+        "v1": {
+          "qname": {
+            "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AP",
+            "local_name": "x95"
+          }
+        }
+      },
+      "expected": false,
+      "binding_reference": "synthetic://explicit-typed-atom-bindings"
+    },
+    {
+      "id": "typed-2.8.2-conditional-absent",
+      "technical_version": "2.8.2",
+      "validation_code": "BV1853",
+      "bindings": {
+        "v0": {
+          "qname": {
+            "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/RT",
+            "local_name": "x257"
+          }
+        },
+        "v1": {
+          "absent": true
+        }
+      },
+      "expected": true,
+      "binding_reference": "synthetic://explicit-typed-atom-bindings"
+    },
+    {
+      "id": "typed-2.8.2-conditional-empty-string",
+      "technical_version": "2.8.2",
+      "validation_code": "BV1853",
+      "bindings": {
+        "v0": {
+          "qname": {
+            "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/RT",
+            "local_name": "x257"
+          }
+        },
+        "v1": {
+          "text": ""
+        }
+      },
+      "expected": false,
+      "binding_reference": "synthetic://explicit-typed-atom-bindings"
+    },
+    {
+      "id": "typed-2.8.2-other-condition-present",
+      "technical_version": "2.8.2",
+      "validation_code": "BV1853",
+      "bindings": {
+        "v0": {
+          "qname": {
+            "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/RT",
+            "local_name": "x256"
+          }
+        },
+        "v1": {
+          "text": "synthetic-reference"
+        }
+      },
+      "expected": true,
+      "binding_reference": "synthetic://explicit-typed-atom-bindings"
+    },
+    {
+      "id": "typed-2.8.2-hotfix-forbidden-member",
+      "technical_version": "2.8.2-hotfix",
+      "validation_code": "BV1339",
+      "bindings": {
+        "v0": {
+          "qname": {
+            "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/CU",
+            "local_name": "x7"
+          }
+        }
+      },
+      "expected": false,
+      "binding_reference": "synthetic://explicit-typed-atom-bindings"
+    },
+    {
+      "id": "typed-2.8.2-hotfix-other-member",
+      "technical_version": "2.8.2-hotfix",
+      "validation_code": "BV1339",
+      "bindings": {
+        "v0": {
+          "qname": {
+            "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/CU",
+            "local_name": "x5"
+          }
+        }
+      },
+      "expected": true,
+      "binding_reference": "synthetic://explicit-typed-atom-bindings"
+    },
+    {
+      "id": "typed-2.8.2-hotfix-namespace-identity-only",
+      "technical_version": "2.8.2-hotfix",
+      "validation_code": "BV1339",
+      "bindings": {
+        "v0": {
+          "qname": {
+            "namespace": "urn:synthetic-other",
+            "local_name": "x7"
+          }
+        }
+      },
+      "expected": true,
+      "binding_reference": "synthetic://explicit-typed-atom-bindings"
+    },
+    {
+      "id": "typed-2.8.2-hotfix-present-required-member",
+      "technical_version": "2.8.2-hotfix",
+      "validation_code": "BV1858",
+      "bindings": {
+        "v0": {
+          "text": "synthetic-reference"
+        },
+        "v1": {
+          "qname": {
+            "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AP",
+            "local_name": "x94"
+          }
+        }
+      },
+      "expected": true,
+      "binding_reference": "synthetic://explicit-typed-atom-bindings"
+    },
+    {
+      "id": "typed-2.8.2-hotfix-present-wrong-member",
+      "technical_version": "2.8.2-hotfix",
+      "validation_code": "BV1858",
+      "bindings": {
+        "v0": {
+          "text": "synthetic-reference"
+        },
+        "v1": {
+          "qname": {
+            "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AP",
+            "local_name": "x95"
+          }
+        }
+      },
+      "expected": false,
+      "binding_reference": "synthetic://explicit-typed-atom-bindings"
+    },
+    {
+      "id": "typed-2.8.2-hotfix-absent-not-empty-string",
+      "technical_version": "2.8.2-hotfix",
+      "validation_code": "BV1858",
+      "bindings": {
+        "v0": {
+          "absent": true
+        },
+        "v1": {
+          "qname": {
+            "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AP",
+            "local_name": "x95"
+          }
+        }
+      },
+      "expected": true,
+      "binding_reference": "synthetic://explicit-typed-atom-bindings"
+    },
+    {
+      "id": "typed-2.8.2-hotfix-empty-string-still-present",
+      "technical_version": "2.8.2-hotfix",
+      "validation_code": "BV1858",
+      "bindings": {
+        "v0": {
+          "text": ""
+        },
+        "v1": {
+          "qname": {
+            "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AP",
+            "local_name": "x95"
+          }
+        }
+      },
+      "expected": false,
+      "binding_reference": "synthetic://explicit-typed-atom-bindings"
+    },
+    {
+      "id": "typed-2.8.2-hotfix-conditional-absent",
+      "technical_version": "2.8.2-hotfix",
+      "validation_code": "BV1853",
+      "bindings": {
+        "v0": {
+          "qname": {
+            "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/RT",
+            "local_name": "x257"
+          }
+        },
+        "v1": {
+          "absent": true
+        }
+      },
+      "expected": true,
+      "binding_reference": "synthetic://explicit-typed-atom-bindings"
+    },
+    {
+      "id": "typed-2.8.2-hotfix-conditional-empty-string",
+      "technical_version": "2.8.2-hotfix",
+      "validation_code": "BV1853",
+      "bindings": {
+        "v0": {
+          "qname": {
+            "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/RT",
+            "local_name": "x257"
+          }
+        },
+        "v1": {
+          "text": ""
+        }
+      },
+      "expected": false,
+      "binding_reference": "synthetic://explicit-typed-atom-bindings"
+    },
+    {
+      "id": "typed-2.8.2-hotfix-other-condition-present",
+      "technical_version": "2.8.2-hotfix",
+      "validation_code": "BV1853",
+      "bindings": {
+        "v0": {
+          "qname": {
+            "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/RT",
+            "local_name": "x256"
+          }
+        },
+        "v1": {
+          "text": "synthetic-reference"
+        }
+      },
+      "expected": true,
+      "binding_reference": "synthetic://explicit-typed-atom-bindings"
+    },
+    {
+      "id": "typed-2.10.0-forbidden-member",
+      "technical_version": "2.10.0",
+      "validation_code": "BV1339",
+      "bindings": {
+        "v0": {
+          "qname": {
+            "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/CU",
+            "local_name": "x7"
+          }
+        }
+      },
+      "expected": false,
+      "binding_reference": "synthetic://explicit-typed-atom-bindings"
+    },
+    {
+      "id": "typed-2.10.0-other-member",
+      "technical_version": "2.10.0",
+      "validation_code": "BV1339",
+      "bindings": {
+        "v0": {
+          "qname": {
+            "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/CU",
+            "local_name": "x5"
+          }
+        }
+      },
+      "expected": true,
+      "binding_reference": "synthetic://explicit-typed-atom-bindings"
+    },
+    {
+      "id": "typed-2.10.0-namespace-identity-only",
+      "technical_version": "2.10.0",
+      "validation_code": "BV1339",
+      "bindings": {
+        "v0": {
+          "qname": {
+            "namespace": "urn:synthetic-other",
+            "local_name": "x7"
+          }
+        }
+      },
+      "expected": true,
+      "binding_reference": "synthetic://explicit-typed-atom-bindings"
+    },
+    {
+      "id": "typed-2.10.0-present-required-member",
+      "technical_version": "2.10.0",
+      "validation_code": "BV1858",
+      "bindings": {
+        "v0": {
+          "text": "synthetic-reference"
+        },
+        "v1": {
+          "qname": {
+            "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AP",
+            "local_name": "x94"
+          }
+        }
+      },
+      "expected": true,
+      "binding_reference": "synthetic://explicit-typed-atom-bindings"
+    },
+    {
+      "id": "typed-2.10.0-present-wrong-member",
+      "technical_version": "2.10.0",
+      "validation_code": "BV1858",
+      "bindings": {
+        "v0": {
+          "text": "synthetic-reference"
+        },
+        "v1": {
+          "qname": {
+            "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AP",
+            "local_name": "x95"
+          }
+        }
+      },
+      "expected": false,
+      "binding_reference": "synthetic://explicit-typed-atom-bindings"
+    },
+    {
+      "id": "typed-2.10.0-absent-not-empty-string",
+      "technical_version": "2.10.0",
+      "validation_code": "BV1858",
+      "bindings": {
+        "v0": {
+          "absent": true
+        },
+        "v1": {
+          "qname": {
+            "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AP",
+            "local_name": "x95"
+          }
+        }
+      },
+      "expected": true,
+      "binding_reference": "synthetic://explicit-typed-atom-bindings"
+    },
+    {
+      "id": "typed-2.10.0-empty-string-still-present",
+      "technical_version": "2.10.0",
+      "validation_code": "BV1858",
+      "bindings": {
+        "v0": {
+          "text": ""
+        },
+        "v1": {
+          "qname": {
+            "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AP",
+            "local_name": "x95"
+          }
+        }
+      },
+      "expected": false,
+      "binding_reference": "synthetic://explicit-typed-atom-bindings"
+    },
+    {
+      "id": "typed-2.10.0-conditional-absent",
+      "technical_version": "2.10.0",
+      "validation_code": "BV1853",
+      "bindings": {
+        "v0": {
+          "qname": {
+            "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/RT",
+            "local_name": "x257"
+          }
+        },
+        "v1": {
+          "absent": true
+        }
+      },
+      "expected": true,
+      "binding_reference": "synthetic://explicit-typed-atom-bindings"
+    },
+    {
+      "id": "typed-2.10.0-conditional-empty-string",
+      "technical_version": "2.10.0",
+      "validation_code": "BV1853",
+      "bindings": {
+        "v0": {
+          "qname": {
+            "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/RT",
+            "local_name": "x257"
+          }
+        },
+        "v1": {
+          "text": ""
+        }
+      },
+      "expected": false,
+      "binding_reference": "synthetic://explicit-typed-atom-bindings"
+    },
+    {
+      "id": "typed-2.10.0-other-condition-present",
+      "technical_version": "2.10.0",
+      "validation_code": "BV1853",
+      "bindings": {
+        "v0": {
+          "qname": {
+            "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/RT",
+            "local_name": "x256"
+          }
+        },
+        "v1": {
+          "text": "synthetic-reference"
+        }
+      },
+      "expected": true,
+      "binding_reference": "synthetic://explicit-typed-atom-bindings"
+    }
+  ]
+}

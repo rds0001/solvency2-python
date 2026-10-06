@@ -1,0 +1,708 @@
+{
+  "status": "SYNTHETIC_DPM_VALUE_CASES_NOT_FULL_REPORTS",
+  "qualification": "Manual expectations for datatypes and explicit enumeration hierarchies. Not XML schema, presence/nil, unit/context or business-rule validation.",
+  "cases": [
+    {
+      "id": "metric-2.8.2-peril-permitted",
+      "technical_version": "2.8.2",
+      "metric_code": "ei2578",
+      "fact": {
+        "qname": {
+          "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/RT",
+          "local_name": "x257"
+        }
+      },
+      "expected": true
+    },
+    {
+      "id": "metric-2.8.2-peril-other-permitted",
+      "technical_version": "2.8.2",
+      "metric_code": "ei2578",
+      "fact": {
+        "qname": {
+          "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/RT",
+          "local_name": "x126"
+        }
+      },
+      "expected": true
+    },
+    {
+      "id": "metric-2.8.2-peril-not-in-hierarchy",
+      "technical_version": "2.8.2",
+      "metric_code": "ei2578",
+      "fact": {
+        "qname": {
+          "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/RT",
+          "local_name": "x256"
+        }
+      },
+      "expected": false
+    },
+    {
+      "id": "metric-2.8.2-peril-wrong-namespace",
+      "technical_version": "2.8.2",
+      "metric_code": "ei2578",
+      "fact": {
+        "qname": {
+          "namespace": "urn:synthetic-other",
+          "local_name": "x257"
+        }
+      },
+      "expected": false
+    },
+    {
+      "id": "metric-2.8.2-peril-not-text",
+      "technical_version": "2.8.2",
+      "metric_code": "ei2578",
+      "fact": {
+        "text": "x257"
+      },
+      "expected": false
+    },
+    {
+      "id": "metric-2.8.2-currency-business-rule-separate",
+      "technical_version": "2.8.2",
+      "metric_code": "ei1024",
+      "fact": {
+        "qname": {
+          "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/CU",
+          "local_name": "x7"
+        }
+      },
+      "expected": true
+    },
+    {
+      "id": "metric-2.8.2-currency-root-excluded",
+      "technical_version": "2.8.2",
+      "metric_code": "ei1024",
+      "fact": {
+        "qname": {
+          "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/CU",
+          "local_name": "x0"
+        }
+      },
+      "expected": false
+    },
+    {
+      "id": "metric-2.8.2-currency-eur",
+      "technical_version": "2.8.2",
+      "metric_code": "ei1024",
+      "fact": {
+        "qname": {
+          "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/CU",
+          "local_name": "EUR"
+        }
+      },
+      "expected": true
+    },
+    {
+      "id": "metric-2.8.2-present-empty-text",
+      "technical_version": "2.8.2",
+      "metric_code": "si2627",
+      "fact": {
+        "text": ""
+      },
+      "expected": true
+    },
+    {
+      "id": "metric-2.8.2-text-not-boolean",
+      "technical_version": "2.8.2",
+      "metric_code": "si2627",
+      "fact": {
+        "boolean": true
+      },
+      "expected": false
+    },
+    {
+      "id": "metric-2.8.2-integer",
+      "technical_version": "2.8.2",
+      "metric_code": "ii1066",
+      "fact": {
+        "value": "4",
+        "decimals": "INF"
+      },
+      "expected": true
+    },
+    {
+      "id": "metric-2.8.2-fraction-not-integer",
+      "technical_version": "2.8.2",
+      "metric_code": "ii1066",
+      "fact": {
+        "value": "4.5",
+        "decimals": 1
+      },
+      "expected": false
+    },
+    {
+      "id": "metric-2.8.2-explicit-false",
+      "technical_version": "2.8.2",
+      "metric_code": "bi1855",
+      "fact": {
+        "boolean": false
+      },
+      "expected": true
+    },
+    {
+      "id": "metric-2.8.2-zero-not-boolean",
+      "technical_version": "2.8.2",
+      "metric_code": "bi1855",
+      "fact": {
+        "value": "0",
+        "decimals": "INF"
+      },
+      "expected": false
+    },
+    {
+      "id": "metric-2.8.2-percent-no-invented-upper-bound",
+      "technical_version": "2.8.2",
+      "metric_code": "pi1283",
+      "fact": {
+        "value": "1.2",
+        "decimals": 1
+      },
+      "expected": true
+    },
+    {
+      "id": "metric-2.8.2-money-sign-business-rule-separate",
+      "technical_version": "2.8.2",
+      "metric_code": "mi2954",
+      "fact": {
+        "value": "-10",
+        "decimals": 0
+      },
+      "expected": true
+    },
+    {
+      "id": "metric-2.8.2-decimal",
+      "technical_version": "2.8.2",
+      "metric_code": "pi1050",
+      "fact": {
+        "value": "0.25",
+        "decimals": 2
+      },
+      "expected": true
+    },
+    {
+      "id": "metric-2.8.2-date-text-not-coerced",
+      "technical_version": "2.8.2",
+      "metric_code": "di10",
+      "fact": {
+        "text": "2026-01-01"
+      },
+      "expected": false
+    },
+    {
+      "id": "metric-2.8.2-absence-not-datatype",
+      "technical_version": "2.8.2",
+      "metric_code": "si2627",
+      "fact": {
+        "absent": true
+      },
+      "expected_error": "UNSUPPORTED_METHOD"
+    },
+    {
+      "id": "metric-2.8.2-hotfix-peril-permitted",
+      "technical_version": "2.8.2-hotfix",
+      "metric_code": "ei2578",
+      "fact": {
+        "qname": {
+          "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/RT",
+          "local_name": "x257"
+        }
+      },
+      "expected": true
+    },
+    {
+      "id": "metric-2.8.2-hotfix-peril-other-permitted",
+      "technical_version": "2.8.2-hotfix",
+      "metric_code": "ei2578",
+      "fact": {
+        "qname": {
+          "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/RT",
+          "local_name": "x126"
+        }
+      },
+      "expected": true
+    },
+    {
+      "id": "metric-2.8.2-hotfix-peril-not-in-hierarchy",
+      "technical_version": "2.8.2-hotfix",
+      "metric_code": "ei2578",
+      "fact": {
+        "qname": {
+          "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/RT",
+          "local_name": "x256"
+        }
+      },
+      "expected": false
+    },
+    {
+      "id": "metric-2.8.2-hotfix-peril-wrong-namespace",
+      "technical_version": "2.8.2-hotfix",
+      "metric_code": "ei2578",
+      "fact": {
+        "qname": {
+          "namespace": "urn:synthetic-other",
+          "local_name": "x257"
+        }
+      },
+      "expected": false
+    },
+    {
+      "id": "metric-2.8.2-hotfix-peril-not-text",
+      "technical_version": "2.8.2-hotfix",
+      "metric_code": "ei2578",
+      "fact": {
+        "text": "x257"
+      },
+      "expected": false
+    },
+    {
+      "id": "metric-2.8.2-hotfix-currency-business-rule-separate",
+      "technical_version": "2.8.2-hotfix",
+      "metric_code": "ei1024",
+      "fact": {
+        "qname": {
+          "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/CU",
+          "local_name": "x7"
+        }
+      },
+      "expected": true
+    },
+    {
+      "id": "metric-2.8.2-hotfix-currency-root-excluded",
+      "technical_version": "2.8.2-hotfix",
+      "metric_code": "ei1024",
+      "fact": {
+        "qname": {
+          "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/CU",
+          "local_name": "x0"
+        }
+      },
+      "expected": false
+    },
+    {
+      "id": "metric-2.8.2-hotfix-currency-eur",
+      "technical_version": "2.8.2-hotfix",
+      "metric_code": "ei1024",
+      "fact": {
+        "qname": {
+          "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/CU",
+          "local_name": "EUR"
+        }
+      },
+      "expected": true
+    },
+    {
+      "id": "metric-2.8.2-hotfix-present-empty-text",
+      "technical_version": "2.8.2-hotfix",
+      "metric_code": "si2627",
+      "fact": {
+        "text": ""
+      },
+      "expected": true
+    },
+    {
+      "id": "metric-2.8.2-hotfix-text-not-boolean",
+      "technical_version": "2.8.2-hotfix",
+      "metric_code": "si2627",
+      "fact": {
+        "boolean": true
+      },
+      "expected": false
+    },
+    {
+      "id": "metric-2.8.2-hotfix-integer",
+      "technical_version": "2.8.2-hotfix",
+      "metric_code": "ii1066",
+      "fact": {
+        "value": "4",
+        "decimals": "INF"
+      },
+      "expected": true
+    },
+    {
+      "id": "metric-2.8.2-hotfix-fraction-not-integer",
+      "technical_version": "2.8.2-hotfix",
+      "metric_code": "ii1066",
+      "fact": {
+        "value": "4.5",
+        "decimals": 1
+      },
+      "expected": false
+    },
+    {
+      "id": "metric-2.8.2-hotfix-explicit-false",
+      "technical_version": "2.8.2-hotfix",
+      "metric_code": "bi1855",
+      "fact": {
+        "boolean": false
+      },
+      "expected": true
+    },
+    {
+      "id": "metric-2.8.2-hotfix-zero-not-boolean",
+      "technical_version": "2.8.2-hotfix",
+      "metric_code": "bi1855",
+      "fact": {
+        "value": "0",
+        "decimals": "INF"
+      },
+      "expected": false
+    },
+    {
+      "id": "metric-2.8.2-hotfix-percent-no-invented-upper-bound",
+      "technical_version": "2.8.2-hotfix",
+      "metric_code": "pi1283",
+      "fact": {
+        "value": "1.2",
+        "decimals": 1
+      },
+      "expected": true
+    },
+    {
+      "id": "metric-2.8.2-hotfix-money-sign-business-rule-separate",
+      "technical_version": "2.8.2-hotfix",
+      "metric_code": "mi2954",
+      "fact": {
+        "value": "-10",
+        "decimals": 0
+      },
+      "expected": true
+    },
+    {
+      "id": "metric-2.8.2-hotfix-decimal",
+      "technical_version": "2.8.2-hotfix",
+      "metric_code": "pi1050",
+      "fact": {
+        "value": "0.25",
+        "decimals": 2
+      },
+      "expected": true
+    },
+    {
+      "id": "metric-2.8.2-hotfix-date-text-not-coerced",
+      "technical_version": "2.8.2-hotfix",
+      "metric_code": "di10",
+      "fact": {
+        "text": "2026-01-01"
+      },
+      "expected": false
+    },
+    {
+      "id": "metric-2.8.2-hotfix-absence-not-datatype",
+      "technical_version": "2.8.2-hotfix",
+      "metric_code": "si2627",
+      "fact": {
+        "absent": true
+      },
+      "expected_error": "UNSUPPORTED_METHOD"
+    },
+    {
+      "id": "metric-2.10.0-peril-permitted",
+      "technical_version": "2.10.0",
+      "metric_code": "ei2578",
+      "fact": {
+        "qname": {
+          "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/RT",
+          "local_name": "x257"
+        }
+      },
+      "expected": true
+    },
+    {
+      "id": "metric-2.10.0-peril-other-permitted",
+      "technical_version": "2.10.0",
+      "metric_code": "ei2578",
+      "fact": {
+        "qname": {
+          "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/RT",
+          "local_name": "x126"
+        }
+      },
+      "expected": true
+    },
+    {
+      "id": "metric-2.10.0-peril-not-in-hierarchy",
+      "technical_version": "2.10.0",
+      "metric_code": "ei2578",
+      "fact": {
+        "qname": {
+          "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/RT",
+          "local_name": "x256"
+        }
+      },
+      "expected": false
+    },
+    {
+      "id": "metric-2.10.0-peril-wrong-namespace",
+      "technical_version": "2.10.0",
+      "metric_code": "ei2578",
+      "fact": {
+        "qname": {
+          "namespace": "urn:synthetic-other",
+          "local_name": "x257"
+        }
+      },
+      "expected": false
+    },
+    {
+      "id": "metric-2.10.0-peril-not-text",
+      "technical_version": "2.10.0",
+      "metric_code": "ei2578",
+      "fact": {
+        "text": "x257"
+      },
+      "expected": false
+    },
+    {
+      "id": "metric-2.10.0-currency-business-rule-separate",
+      "technical_version": "2.10.0",
+      "metric_code": "ei1024",
+      "fact": {
+        "qname": {
+          "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/CU",
+          "local_name": "x7"
+        }
+      },
+      "expected": true
+    },
+    {
+      "id": "metric-2.10.0-currency-root-excluded",
+      "technical_version": "2.10.0",
+      "metric_code": "ei1024",
+      "fact": {
+        "qname": {
+          "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/CU",
+          "local_name": "x0"
+        }
+      },
+      "expected": false
+    },
+    {
+      "id": "metric-2.10.0-currency-eur",
+      "technical_version": "2.10.0",
+      "metric_code": "ei1024",
+      "fact": {
+        "qname": {
+          "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/CU",
+          "local_name": "EUR"
+        }
+      },
+      "expected": true
+    },
+    {
+      "id": "metric-2.10.0-present-empty-text",
+      "technical_version": "2.10.0",
+      "metric_code": "si2627",
+      "fact": {
+        "text": ""
+      },
+      "expected": true
+    },
+    {
+      "id": "metric-2.10.0-text-not-boolean",
+      "technical_version": "2.10.0",
+      "metric_code": "si2627",
+      "fact": {
+        "boolean": true
+      },
+      "expected": false
+    },
+    {
+      "id": "metric-2.10.0-integer",
+      "technical_version": "2.10.0",
+      "metric_code": "ii1066",
+      "fact": {
+        "value": "4",
+        "decimals": "INF"
+      },
+      "expected": true
+    },
+    {
+      "id": "metric-2.10.0-fraction-not-integer",
+      "technical_version": "2.10.0",
+      "metric_code": "ii1066",
+      "fact": {
+        "value": "4.5",
+        "decimals": 1
+      },
+      "expected": false
+    },
+    {
+      "id": "metric-2.10.0-explicit-false",
+      "technical_version": "2.10.0",
+      "metric_code": "bi1855",
+      "fact": {
+        "boolean": false
+      },
+      "expected": true
+    },
+    {
+      "id": "metric-2.10.0-zero-not-boolean",
+      "technical_version": "2.10.0",
+      "metric_code": "bi1855",
+      "fact": {
+        "value": "0",
+        "decimals": "INF"
+      },
+      "expected": false
+    },
+    {
+      "id": "metric-2.10.0-percent-no-invented-upper-bound",
+      "technical_version": "2.10.0",
+      "metric_code": "pi1283",
+      "fact": {
+        "value": "1.2",
+        "decimals": 1
+      },
+      "expected": true
+    },
+    {
+      "id": "metric-2.10.0-money-sign-business-rule-separate",
+      "technical_version": "2.10.0",
+      "metric_code": "mi2954",
+      "fact": {
+        "value": "-10",
+        "decimals": 0
+      },
+      "expected": true
+    },
+    {
+      "id": "metric-2.10.0-decimal",
+      "technical_version": "2.10.0",
+      "metric_code": "pi1050",
+      "fact": {
+        "value": "0.25",
+        "decimals": 2
+      },
+      "expected": true
+    },
+    {
+      "id": "metric-2.10.0-date-text-not-coerced",
+      "technical_version": "2.10.0",
+      "metric_code": "di10",
+      "fact": {
+        "text": "2026-01-01"
+      },
+      "expected": false
+    },
+    {
+      "id": "metric-2.10.0-absence-not-datatype",
+      "technical_version": "2.10.0",
+      "metric_code": "si2627",
+      "fact": {
+        "absent": true
+      },
+      "expected_error": "UNSUPPORTED_METHOD"
+    },
+    {
+      "id": "metric-2.8.2-valid-calendar-date",
+      "technical_version": "2.8.2",
+      "metric_code": "di10",
+      "fact": {
+        "date": "2024-02-29"
+      },
+      "expected": true
+    },
+    {
+      "id": "metric-2.8.2-invalid-leap-day",
+      "technical_version": "2.8.2",
+      "metric_code": "di10",
+      "fact": {
+        "date": "1900-02-29"
+      },
+      "expected_error": "INVALID_INPUT"
+    },
+    {
+      "id": "metric-2.8.2-timezoned-date-unsupported",
+      "technical_version": "2.8.2",
+      "metric_code": "di10",
+      "fact": {
+        "date": "2026-01-01Z"
+      },
+      "expected_error": "INVALID_INPUT"
+    },
+    {
+      "id": "metric-2.8.2-date-not-text",
+      "technical_version": "2.8.2",
+      "metric_code": "si2627",
+      "fact": {
+        "date": "2027-01-01"
+      },
+      "expected": false
+    },
+    {
+      "id": "metric-2.8.2-hotfix-valid-calendar-date",
+      "technical_version": "2.8.2-hotfix",
+      "metric_code": "di10",
+      "fact": {
+        "date": "2024-02-29"
+      },
+      "expected": true
+    },
+    {
+      "id": "metric-2.8.2-hotfix-invalid-leap-day",
+      "technical_version": "2.8.2-hotfix",
+      "metric_code": "di10",
+      "fact": {
+        "date": "1900-02-29"
+      },
+      "expected_error": "INVALID_INPUT"
+    },
+    {
+      "id": "metric-2.8.2-hotfix-timezoned-date-unsupported",
+      "technical_version": "2.8.2-hotfix",
+      "metric_code": "di10",
+      "fact": {
+        "date": "2026-01-01Z"
+      },
+      "expected_error": "INVALID_INPUT"
+    },
+    {
+      "id": "metric-2.8.2-hotfix-date-not-text",
+      "technical_version": "2.8.2-hotfix",
+      "metric_code": "si2627",
+      "fact": {
+        "date": "2027-01-01"
+      },
+      "expected": false
+    },
+    {
+      "id": "metric-2.10.0-valid-calendar-date",
+      "technical_version": "2.10.0",
+      "metric_code": "di10",
+      "fact": {
+        "date": "2024-02-29"
+      },
+      "expected": true
+    },
+    {
+      "id": "metric-2.10.0-invalid-leap-day",
+      "technical_version": "2.10.0",
+      "metric_code": "di10",
+      "fact": {
+        "date": "1900-02-29"
+      },
+      "expected_error": "INVALID_INPUT"
+    },
+    {
+      "id": "metric-2.10.0-timezoned-date-unsupported",
+      "technical_version": "2.10.0",
+      "metric_code": "di10",
+      "fact": {
+        "date": "2026-01-01Z"
+      },
+      "expected_error": "INVALID_INPUT"
+    },
+    {
+      "id": "metric-2.10.0-date-not-text",
+      "technical_version": "2.10.0",
+      "metric_code": "si2627",
+      "fact": {
+        "date": "2027-01-01"
+      },
+      "expected": false
+    }
+  ]
+}

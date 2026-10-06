@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "curve_id": "synthetic-example",
+  "as_of": "2028-12-31",
+  "currency": "EUR",
+  "curve_kind": "base",
+  "source_reference": "SYNTHETIC: not market data",
+  "value_type": "discount_factor",
+  "unit": "dimensionless",
+  "points": [{"date": "2029-12-31", "discount_factor": 0.95}]
+}

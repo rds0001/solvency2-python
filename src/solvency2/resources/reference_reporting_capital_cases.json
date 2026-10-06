@@ -1,0 +1,259 @@
+{
+  "schema_version": 1,
+  "status": "SYNTHETIC_CALCULATION_TO_REQUESTED_REPORT_CELLS_NOT_FULL_ANNUAL_RETURN",
+  "qualification": [
+    "Fictional Article35 ad-hoc request, Filing Rules V.6.2; explicitly requested cells are the Basic Information cells below and four S.23.01 capital cells. No real NCA request, registration, exemption or filing is asserted.",
+    "All external qualifications and limitations of the referenced capital portfolio remain applicable, including independently supplied module stresses and insurer data.",
+    "The artificial SC identifier assumes a fictional reporter without an allocated LEI. It is not a registered identifier.",
+    "Technical release applicability is an explicit synthetic assumption; no date-based release selection or current legal approval.",
+    "All four capital values are copied unchanged from named engine outputs, with six declared decimals. No conversion, scaling or recomputation in the reporting step.",
+    "These cases are complete for this declared synthetic cell request, not for annual/quarterly obligations or all insurer activities. Unexecuted reporting rules and final DTS validation remain visible."
+  ],
+  "module": "ars",
+  "entity": {
+    "scheme": "SC",
+    "identifier": "SYNTHETIC-REFERENCE"
+  },
+  "indicators": {
+    "S.01.02": true,
+    "S.23.01": true
+  },
+  "common_basic_information": {
+    "R0010": {
+      "text": "SYNTHETIC Reference Reinsurance - not a real undertaking"
+    },
+    "R0020": {
+      "text": "SC/SYNTHETIC-REFERENCE"
+    },
+    "R0040": {
+      "qname": {
+        "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/SE",
+        "local_name": "x75"
+      }
+    },
+    "R0050": {
+      "qname": {
+        "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/GA",
+        "local_name": "DE"
+      }
+    },
+    "R0070": {
+      "qname": {
+        "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/LA",
+        "local_name": "de"
+      }
+    },
+    "R0100": {
+      "qname": {
+        "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/CS",
+        "local_name": "x36"
+      }
+    },
+    "R0110": {
+      "qname": {
+        "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/CU",
+        "local_name": "EUR"
+      }
+    },
+    "R0120": {
+      "qname": {
+        "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AM",
+        "local_name": "x50"
+      }
+    },
+    "R0130": {
+      "qname": {
+        "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AP",
+        "local_name": "x3"
+      }
+    },
+    "R0140": {
+      "qname": {
+        "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AP",
+        "local_name": "x6"
+      }
+    },
+    "R0150": {
+      "qname": {
+        "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/PU",
+        "local_name": "x17"
+      }
+    },
+    "R0170": {
+      "qname": {
+        "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/PU",
+        "local_name": "x52"
+      }
+    },
+    "R0180": {
+      "qname": {
+        "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AP",
+        "local_name": "x8"
+      }
+    },
+    "R0190": {
+      "qname": {
+        "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AP",
+        "local_name": "x10"
+      }
+    },
+    "R0200": {
+      "qname": {
+        "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AP",
+        "local_name": "x12"
+      }
+    },
+    "R0210": {
+      "qname": {
+        "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/CS",
+        "local_name": "x37"
+      }
+    },
+    "R0250": {
+      "qname": {
+        "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/CN",
+        "local_name": "x78"
+      }
+    },
+    "R0255": {
+      "text": "NOT PROVIDED/NOT AVAILABLE"
+    },
+    "R0260": {
+      "text": "NOT PROVIDED/NOT AVAILABLE"
+    },
+    "R0270": {
+      "qname": {
+        "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/LB",
+        "local_name": "x240"
+      }
+    },
+    "R0280": {
+      "qname": {
+        "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/TB",
+        "local_name": "x70"
+      }
+    },
+    "R0290": {
+      "qname": {
+        "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/MC",
+        "local_name": "x297"
+      }
+    },
+    "R0300": {
+      "qname": {
+        "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/CN",
+        "local_name": "x7001"
+      }
+    },
+    "R0990": {
+      "text": "SYNTHETIC NCA AD-HOC REQUEST - NOT A REAL REQUEST"
+    },
+    "R0991": {
+      "text": "Complete only for the explicitly listed synthetic requested cells"
+    },
+    "R0992": {
+      "text": "Qualified capital components; no full insurer model or filing approval"
+    }
+  },
+  "date_rows": [
+    "R0080",
+    "R0081",
+    "R0090"
+  ],
+  "future_basic_information": {
+    "R0185": {
+      "qname": {
+        "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AP",
+        "local_name": "x117"
+      }
+    },
+    "R0187": {
+      "qname": {
+        "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AP",
+        "local_name": "x122"
+      }
+    },
+    "R0188": {
+      "qname": {
+        "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AP",
+        "local_name": "x0"
+      }
+    },
+    "R0205": {
+      "qname": {
+        "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AP",
+        "local_name": "x119"
+      }
+    },
+    "R0295": {
+      "qname": {
+        "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/SE",
+        "local_name": "x201"
+      }
+    }
+  },
+  "result_bindings": [
+    {
+      "node": "scr_funds",
+      "business_code": "{S.23.01.01.01,R0540,C0010,Z0001}",
+      "metric_code": "mi2004",
+      "decimals": 6
+    },
+    {
+      "node": "mcr_funds",
+      "business_code": "{S.23.01.01.01,R0550,C0010,Z0001}",
+      "metric_code": "mi424",
+      "decimals": 6
+    },
+    {
+      "node": "scr",
+      "business_code": "{S.23.01.01.01,R0580,C0010,Z0001}",
+      "metric_code": "mi1958",
+      "decimals": 6
+    },
+    {
+      "node": "mcr",
+      "business_code": "{S.23.01.01.01,R0600,C0010,Z0001}",
+      "metric_code": "mi1959",
+      "decimals": 6
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "capital-report-baseline",
+      "technical_version": "2.8.2",
+      "portfolio_id": "capital-balance-chain-baseline",
+      "future": false,
+      "expected_values": {
+        "scr_funds": 244200000,
+        "mcr_funds": 244200000,
+        "scr": 52183558.55797927,
+        "mcr": 23482601.351090673
+      }
+    },
+    {
+      "id": "capital-report-hotfix",
+      "technical_version": "2.8.2-hotfix",
+      "portfolio_id": "capital-balance-chain-baseline",
+      "future": false,
+      "expected_values": {
+        "scr_funds": 244200000,
+        "mcr_funds": 244200000,
+        "scr": 52183558.55797927,
+        "mcr": 23482601.351090673
+      }
+    },
+    {
+      "id": "capital-report-future",
+      "technical_version": "2.10.0",
+      "portfolio_id": "capital-balance-chain-future",
+      "future": true,
+      "expected_values": {
+        "scr_funds": 244594000,
+        "mcr_funds": 244594000,
+        "scr": 52183558.55797927,
+        "mcr": 23482601.351090673
+      }
+    }
+  ]
+}

@@ -1,0 +1,550 @@
+{
+  "schema_version": "1",
+  "status": "SYNTHETIC_BOUND_EXPRESSION_CASES_NOT_FULL_REPORTS",
+  "cases": [
+    {
+      "id": "bv1053-2.8.2-1000",
+      "technical_version": "2.8.2",
+      "validation_code": "BV1053-1",
+      "bindings": {
+        "v1": {
+          "value": 1000,
+          "decimals": 0
+        },
+        "v2": {
+          "values": [
+            {
+              "value": 100,
+              "decimals": 0
+            },
+            {
+              "value": 200,
+              "decimals": 0
+            },
+            {
+              "value": 300,
+              "decimals": 0
+            },
+            {
+              "value": 400,
+              "decimals": 0
+            }
+          ]
+        }
+      },
+      "binding_reference": "synthetic://single-qualified-entity-period-currency",
+      "expected": true,
+      "derivation": "rhs=1000; lhs tolerance=.5, four rhs tolerances=.5 each; allowed absolute difference<=2.5."
+    },
+    {
+      "id": "bv1053-2.8.2-1002.5",
+      "technical_version": "2.8.2",
+      "validation_code": "BV1053-1",
+      "bindings": {
+        "v1": {
+          "value": "1002.5",
+          "decimals": 0
+        },
+        "v2": {
+          "values": [
+            {
+              "value": 100,
+              "decimals": 0
+            },
+            {
+              "value": 200,
+              "decimals": 0
+            },
+            {
+              "value": 300,
+              "decimals": 0
+            },
+            {
+              "value": 400,
+              "decimals": 0
+            }
+          ]
+        }
+      },
+      "binding_reference": "synthetic://single-qualified-entity-period-currency",
+      "expected": true,
+      "derivation": "rhs=1000; lhs tolerance=.5, four rhs tolerances=.5 each; allowed absolute difference<=2.5."
+    },
+    {
+      "id": "bv1053-2.8.2-1002.5001",
+      "technical_version": "2.8.2",
+      "validation_code": "BV1053-1",
+      "bindings": {
+        "v1": {
+          "value": "1002.5001",
+          "decimals": 0
+        },
+        "v2": {
+          "values": [
+            {
+              "value": 100,
+              "decimals": 0
+            },
+            {
+              "value": 200,
+              "decimals": 0
+            },
+            {
+              "value": 300,
+              "decimals": 0
+            },
+            {
+              "value": 400,
+              "decimals": 0
+            }
+          ]
+        }
+      },
+      "binding_reference": "synthetic://single-qualified-entity-period-currency",
+      "expected": false,
+      "derivation": "rhs=1000; lhs tolerance=.5, four rhs tolerances=.5 each; allowed absolute difference<=2.5."
+    },
+    {
+      "id": "bv1053-2.8.2-1005",
+      "technical_version": "2.8.2",
+      "validation_code": "BV1053-1",
+      "bindings": {
+        "v1": {
+          "value": 1005,
+          "decimals": 0
+        },
+        "v2": {
+          "values": [
+            {
+              "value": 100,
+              "decimals": 0
+            },
+            {
+              "value": 200,
+              "decimals": 0
+            },
+            {
+              "value": 300,
+              "decimals": 0
+            },
+            {
+              "value": 400,
+              "decimals": 0
+            }
+          ]
+        }
+      },
+      "binding_reference": "synthetic://single-qualified-entity-period-currency",
+      "expected": false,
+      "derivation": "rhs=1000; lhs tolerance=.5, four rhs tolerances=.5 each; allowed absolute difference<=2.5."
+    },
+    {
+      "id": "bv1053-2.8.2-hotfix-1000",
+      "technical_version": "2.8.2-hotfix",
+      "validation_code": "BV1053-1",
+      "bindings": {
+        "v1": {
+          "value": 1000,
+          "decimals": 0
+        },
+        "v2": {
+          "values": [
+            {
+              "value": 100,
+              "decimals": 0
+            },
+            {
+              "value": 200,
+              "decimals": 0
+            },
+            {
+              "value": 300,
+              "decimals": 0
+            },
+            {
+              "value": 400,
+              "decimals": 0
+            }
+          ]
+        }
+      },
+      "binding_reference": "synthetic://single-qualified-entity-period-currency",
+      "expected": true,
+      "derivation": "rhs=1000; lhs tolerance=.5, four rhs tolerances=.5 each; allowed absolute difference<=2.5."
+    },
+    {
+      "id": "bv1053-2.8.2-hotfix-1002.5",
+      "technical_version": "2.8.2-hotfix",
+      "validation_code": "BV1053-1",
+      "bindings": {
+        "v1": {
+          "value": "1002.5",
+          "decimals": 0
+        },
+        "v2": {
+          "values": [
+            {
+              "value": 100,
+              "decimals": 0
+            },
+            {
+              "value": 200,
+              "decimals": 0
+            },
+            {
+              "value": 300,
+              "decimals": 0
+            },
+            {
+              "value": 400,
+              "decimals": 0
+            }
+          ]
+        }
+      },
+      "binding_reference": "synthetic://single-qualified-entity-period-currency",
+      "expected": true,
+      "derivation": "rhs=1000; lhs tolerance=.5, four rhs tolerances=.5 each; allowed absolute difference<=2.5."
+    },
+    {
+      "id": "bv1053-2.8.2-hotfix-1002.5001",
+      "technical_version": "2.8.2-hotfix",
+      "validation_code": "BV1053-1",
+      "bindings": {
+        "v1": {
+          "value": "1002.5001",
+          "decimals": 0
+        },
+        "v2": {
+          "values": [
+            {
+              "value": 100,
+              "decimals": 0
+            },
+            {
+              "value": 200,
+              "decimals": 0
+            },
+            {
+              "value": 300,
+              "decimals": 0
+            },
+            {
+              "value": 400,
+              "decimals": 0
+            }
+          ]
+        }
+      },
+      "binding_reference": "synthetic://single-qualified-entity-period-currency",
+      "expected": false,
+      "derivation": "rhs=1000; lhs tolerance=.5, four rhs tolerances=.5 each; allowed absolute difference<=2.5."
+    },
+    {
+      "id": "bv1053-2.8.2-hotfix-1005",
+      "technical_version": "2.8.2-hotfix",
+      "validation_code": "BV1053-1",
+      "bindings": {
+        "v1": {
+          "value": 1005,
+          "decimals": 0
+        },
+        "v2": {
+          "values": [
+            {
+              "value": 100,
+              "decimals": 0
+            },
+            {
+              "value": 200,
+              "decimals": 0
+            },
+            {
+              "value": 300,
+              "decimals": 0
+            },
+            {
+              "value": 400,
+              "decimals": 0
+            }
+          ]
+        }
+      },
+      "binding_reference": "synthetic://single-qualified-entity-period-currency",
+      "expected": false,
+      "derivation": "rhs=1000; lhs tolerance=.5, four rhs tolerances=.5 each; allowed absolute difference<=2.5."
+    },
+    {
+      "id": "bv1053-2.10.0-1000",
+      "technical_version": "2.10.0",
+      "validation_code": "BV1053-1",
+      "bindings": {
+        "v1": {
+          "value": 1000,
+          "decimals": 0
+        },
+        "v2": {
+          "values": [
+            {
+              "value": 100,
+              "decimals": 0
+            },
+            {
+              "value": 200,
+              "decimals": 0
+            },
+            {
+              "value": 300,
+              "decimals": 0
+            },
+            {
+              "value": 400,
+              "decimals": 0
+            }
+          ]
+        }
+      },
+      "binding_reference": "synthetic://single-qualified-entity-period-currency",
+      "expected": true,
+      "derivation": "abs(lhs-sum(rhs))<=abs(.01*sum(rhs)); no extra decimals tolerance. Zero rhs requires exact equality; negative rhs retains positive margin."
+    },
+    {
+      "id": "bv1053-2.10.0-1010",
+      "technical_version": "2.10.0",
+      "validation_code": "BV1053-1",
+      "bindings": {
+        "v1": {
+          "value": 1010,
+          "decimals": 0
+        },
+        "v2": {
+          "values": [
+            {
+              "value": 100,
+              "decimals": 0
+            },
+            {
+              "value": 200,
+              "decimals": 0
+            },
+            {
+              "value": 300,
+              "decimals": 0
+            },
+            {
+              "value": 400,
+              "decimals": 0
+            }
+          ]
+        }
+      },
+      "binding_reference": "synthetic://single-qualified-entity-period-currency",
+      "expected": true,
+      "derivation": "abs(lhs-sum(rhs))<=abs(.01*sum(rhs)); no extra decimals tolerance. Zero rhs requires exact equality; negative rhs retains positive margin."
+    },
+    {
+      "id": "bv1053-2.10.0-1010.001",
+      "technical_version": "2.10.0",
+      "validation_code": "BV1053-1",
+      "bindings": {
+        "v1": {
+          "value": "1010.001",
+          "decimals": 0
+        },
+        "v2": {
+          "values": [
+            {
+              "value": 100,
+              "decimals": 0
+            },
+            {
+              "value": 200,
+              "decimals": 0
+            },
+            {
+              "value": 300,
+              "decimals": 0
+            },
+            {
+              "value": 400,
+              "decimals": 0
+            }
+          ]
+        }
+      },
+      "binding_reference": "synthetic://single-qualified-entity-period-currency",
+      "expected": false,
+      "derivation": "abs(lhs-sum(rhs))<=abs(.01*sum(rhs)); no extra decimals tolerance. Zero rhs requires exact equality; negative rhs retains positive margin."
+    },
+    {
+      "id": "bv1053-2.10.0-990",
+      "technical_version": "2.10.0",
+      "validation_code": "BV1053-1",
+      "bindings": {
+        "v1": {
+          "value": 990,
+          "decimals": 0
+        },
+        "v2": {
+          "values": [
+            {
+              "value": 100,
+              "decimals": 0
+            },
+            {
+              "value": 200,
+              "decimals": 0
+            },
+            {
+              "value": 300,
+              "decimals": 0
+            },
+            {
+              "value": 400,
+              "decimals": 0
+            }
+          ]
+        }
+      },
+      "binding_reference": "synthetic://single-qualified-entity-period-currency",
+      "expected": true,
+      "derivation": "abs(lhs-sum(rhs))<=abs(.01*sum(rhs)); no extra decimals tolerance. Zero rhs requires exact equality; negative rhs retains positive margin."
+    },
+    {
+      "id": "bv1053-2.10.0-989.999",
+      "technical_version": "2.10.0",
+      "validation_code": "BV1053-1",
+      "bindings": {
+        "v1": {
+          "value": "989.999",
+          "decimals": 0
+        },
+        "v2": {
+          "values": [
+            {
+              "value": 100,
+              "decimals": 0
+            },
+            {
+              "value": 200,
+              "decimals": 0
+            },
+            {
+              "value": 300,
+              "decimals": 0
+            },
+            {
+              "value": 400,
+              "decimals": 0
+            }
+          ]
+        }
+      },
+      "binding_reference": "synthetic://single-qualified-entity-period-currency",
+      "expected": false,
+      "derivation": "abs(lhs-sum(rhs))<=abs(.01*sum(rhs)); no extra decimals tolerance. Zero rhs requires exact equality; negative rhs retains positive margin."
+    },
+    {
+      "id": "bv1053-2.10.0-0",
+      "technical_version": "2.10.0",
+      "validation_code": "BV1053-1",
+      "bindings": {
+        "v1": {
+          "value": 0,
+          "decimals": 0
+        },
+        "v2": {
+          "values": [
+            {
+              "value": 0,
+              "decimals": 0
+            },
+            {
+              "value": 0,
+              "decimals": 0
+            },
+            {
+              "value": 0,
+              "decimals": 0
+            },
+            {
+              "value": 0,
+              "decimals": 0
+            }
+          ]
+        }
+      },
+      "binding_reference": "synthetic://single-qualified-entity-period-currency",
+      "expected": true,
+      "derivation": "abs(lhs-sum(rhs))<=abs(.01*sum(rhs)); no extra decimals tolerance. Zero rhs requires exact equality; negative rhs retains positive margin."
+    },
+    {
+      "id": "bv1053-2.10.0-0.0001",
+      "technical_version": "2.10.0",
+      "validation_code": "BV1053-1",
+      "bindings": {
+        "v1": {
+          "value": "0.0001",
+          "decimals": 0
+        },
+        "v2": {
+          "values": [
+            {
+              "value": 0,
+              "decimals": 0
+            },
+            {
+              "value": 0,
+              "decimals": 0
+            },
+            {
+              "value": 0,
+              "decimals": 0
+            },
+            {
+              "value": 0,
+              "decimals": 0
+            }
+          ]
+        }
+      },
+      "binding_reference": "synthetic://single-qualified-entity-period-currency",
+      "expected": false,
+      "derivation": "abs(lhs-sum(rhs))<=abs(.01*sum(rhs)); no extra decimals tolerance. Zero rhs requires exact equality; negative rhs retains positive margin."
+    },
+    {
+      "id": "bv1053-2.10.0--1010",
+      "technical_version": "2.10.0",
+      "validation_code": "BV1053-1",
+      "bindings": {
+        "v1": {
+          "value": -1010,
+          "decimals": 0
+        },
+        "v2": {
+          "values": [
+            {
+              "value": -100,
+              "decimals": 0
+            },
+            {
+              "value": -200,
+              "decimals": 0
+            },
+            {
+              "value": -300,
+              "decimals": 0
+            },
+            {
+              "value": -400,
+              "decimals": 0
+            }
+          ]
+        }
+      },
+      "binding_reference": "synthetic://single-qualified-entity-period-currency",
+      "expected": true,
+      "derivation": "abs(lhs-sum(rhs))<=abs(.01*sum(rhs)); no extra decimals tolerance. Zero rhs requires exact equality; negative rhs retains positive margin."
+    }
+  ]
+}

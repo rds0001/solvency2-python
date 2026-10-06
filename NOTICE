@@ -1,0 +1,18 @@
+Solvency II Python Library
+Author: RiskDataScience GmbH
+Contact: riskdatascience@web.de
+
+The library code is distributed under the GNU General Public License,
+version 3 or (at your option) any later version. See LICENSE.
+There is no warranty; see the full license terms.
+
+Source references do not constitute regulatory certification or endorsement.
+Regulatory datasets retain their respective rights and attribution. See
+THIRD_PARTY_NOTICES.md. GPL applies to original library code and invented demo
+data; separately licensed regulatory extracts retain their specified licenses.
+No historical market-data archive is included. Market examples are synthetic.
+Reporting extracts: copyright EIOPA; originals freely available at
+https://www.eiopa.europa.eu/tools-and-data/supervisory-reporting-dpm-and-xbrl_en.
+Modified JSON extracts packaged 2026-10-06, not official release files.
+The EIOPA Taxonomy Licence Agreement is included in LICENSES (wheel license metadata).
+The private agentic generation scaffold is not part of this distribution.

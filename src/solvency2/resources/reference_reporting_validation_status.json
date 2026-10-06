@@ -1,0 +1,234 @@
+{
+  "status": "SYNTHETIC_ARCHIVED_STATUS_LOOKUPS_NOT_FULL_REPORTS",
+  "qualification": "Manual expectations from archived source rows. No current activation, legal applicability, insurer reporting obligation or rule execution certified.",
+  "cases": [
+    {
+      "id": "2.8.2-active-warning",
+      "technical_version": "2.8.2",
+      "validation_code": "BV1053-1",
+      "module": "ars",
+      "expected": {
+        "active_in_snapshot": true,
+        "reason": "ACTIVE_IN_SNAPSHOT",
+        "severity": "WARNING",
+        "implementation_channel": "XBRL_ASSERTION"
+      }
+    },
+    {
+      "id": "2.8.2-non-xbrl-required",
+      "technical_version": "2.8.2",
+      "validation_code": "BV53-1",
+      "module": "ars",
+      "expected": {
+        "active_in_snapshot": true,
+        "reason": "ACTIVE_IN_SNAPSHOT",
+        "severity": "ERROR",
+        "implementation_channel": "OTHER_REQUIRED_CHECK"
+      }
+    },
+    {
+      "id": "2.8.2-unlisted-module",
+      "technical_version": "2.8.2",
+      "validation_code": "BV1053-1",
+      "module": "qes",
+      "expected": {
+        "active_in_snapshot": null,
+        "reason": "RULE_NOT_LISTED_FOR_MODULE",
+        "severity": null,
+        "implementation_channel": null
+      }
+    },
+    {
+      "id": "2.8.2-unknown-rule",
+      "technical_version": "2.8.2",
+      "validation_code": "SYNTHETIC_UNKNOWN_RULE",
+      "module": "ars",
+      "expected": {
+        "active_in_snapshot": null,
+        "reason": "RULE_NOT_LISTED",
+        "severity": null,
+        "implementation_channel": null
+      }
+    },
+    {
+      "id": "2.8.2-duplicate-code",
+      "technical_version": "2.8.2",
+      "validation_code": "BV2057",
+      "module": "ars",
+      "expected": {
+        "active_in_snapshot": null,
+        "reason": "AMBIGUOUS_WORKBOOK_ROWS",
+        "severity": null,
+        "implementation_channel": null
+      }
+    },
+    {
+      "id": "2.8.2-deactivated",
+      "technical_version": "2.8.2",
+      "validation_code": "BV2066",
+      "module": "ars",
+      "expected": {
+        "active_in_snapshot": false,
+        "reason": "FULLY_DEACTIVATED_IN_SNAPSHOT",
+        "severity": "WARNING",
+        "implementation_channel": "XBRL_ASSERTION"
+      }
+    },
+    {
+      "id": "2.8.2-hotfix-active-warning",
+      "technical_version": "2.8.2-hotfix",
+      "validation_code": "BV1053-1",
+      "module": "ars",
+      "expected": {
+        "active_in_snapshot": true,
+        "reason": "ACTIVE_IN_SNAPSHOT",
+        "severity": "WARNING",
+        "implementation_channel": "XBRL_ASSERTION"
+      }
+    },
+    {
+      "id": "2.8.2-hotfix-non-xbrl-required",
+      "technical_version": "2.8.2-hotfix",
+      "validation_code": "BV53-1",
+      "module": "ars",
+      "expected": {
+        "active_in_snapshot": true,
+        "reason": "ACTIVE_IN_SNAPSHOT",
+        "severity": "ERROR",
+        "implementation_channel": "OTHER_REQUIRED_CHECK"
+      }
+    },
+    {
+      "id": "2.8.2-hotfix-unlisted-module",
+      "technical_version": "2.8.2-hotfix",
+      "validation_code": "BV1053-1",
+      "module": "qes",
+      "expected": {
+        "active_in_snapshot": null,
+        "reason": "RULE_NOT_LISTED_FOR_MODULE",
+        "severity": null,
+        "implementation_channel": null
+      }
+    },
+    {
+      "id": "2.8.2-hotfix-unknown-rule",
+      "technical_version": "2.8.2-hotfix",
+      "validation_code": "SYNTHETIC_UNKNOWN_RULE",
+      "module": "ars",
+      "expected": {
+        "active_in_snapshot": null,
+        "reason": "RULE_NOT_LISTED",
+        "severity": null,
+        "implementation_channel": null
+      }
+    },
+    {
+      "id": "2.8.2-hotfix-duplicate-code",
+      "technical_version": "2.8.2-hotfix",
+      "validation_code": "BV2057",
+      "module": "ars",
+      "expected": {
+        "active_in_snapshot": null,
+        "reason": "AMBIGUOUS_WORKBOOK_ROWS",
+        "severity": null,
+        "implementation_channel": null
+      }
+    },
+    {
+      "id": "2.8.2-hotfix-deactivated",
+      "technical_version": "2.8.2-hotfix",
+      "validation_code": "BV2066",
+      "module": "ars",
+      "expected": {
+        "active_in_snapshot": false,
+        "reason": "FULLY_DEACTIVATED_IN_SNAPSHOT",
+        "severity": "WARNING",
+        "implementation_channel": "XBRL_ASSERTION"
+      }
+    },
+    {
+      "id": "2.10.0-active-warning",
+      "technical_version": "2.10.0",
+      "validation_code": "BV1053-1",
+      "module": "ars",
+      "expected": {
+        "active_in_snapshot": true,
+        "reason": "ACTIVE_IN_SNAPSHOT",
+        "severity": "WARNING",
+        "implementation_channel": "XBRL_ASSERTION"
+      }
+    },
+    {
+      "id": "2.10.0-non-xbrl-required",
+      "technical_version": "2.10.0",
+      "validation_code": "BV53-1",
+      "module": "ars",
+      "expected": {
+        "active_in_snapshot": true,
+        "reason": "ACTIVE_IN_SNAPSHOT",
+        "severity": "ERROR",
+        "implementation_channel": "OTHER_REQUIRED_CHECK"
+      }
+    },
+    {
+      "id": "2.10.0-unlisted-module",
+      "technical_version": "2.10.0",
+      "validation_code": "BV1053-1",
+      "module": "qes",
+      "expected": {
+        "active_in_snapshot": null,
+        "reason": "RULE_NOT_LISTED_FOR_MODULE",
+        "severity": null,
+        "implementation_channel": null
+      }
+    },
+    {
+      "id": "2.10.0-unknown-rule",
+      "technical_version": "2.10.0",
+      "validation_code": "SYNTHETIC_UNKNOWN_RULE",
+      "module": "ars",
+      "expected": {
+        "active_in_snapshot": null,
+        "reason": "RULE_NOT_LISTED",
+        "severity": null,
+        "implementation_channel": null
+      }
+    },
+    {
+      "id": "2.10.0-duplicate-code",
+      "technical_version": "2.10.0",
+      "validation_code": "BV2057",
+      "module": "ars",
+      "expected": {
+        "active_in_snapshot": true,
+        "reason": "ACTIVE_IN_SNAPSHOT",
+        "severity": "WARNING",
+        "implementation_channel": "XBRL_ASSERTION"
+      }
+    },
+    {
+      "id": "2.8.2-hotfix-conflict-BV1750_1",
+      "technical_version": "2.8.2-hotfix",
+      "validation_code": "BV1750_1",
+      "module": "ars",
+      "expected": {
+        "active_in_snapshot": null,
+        "reason": "RELATED_SNAPSHOT_CONFLICT",
+        "severity": "ERROR",
+        "implementation_channel": "XBRL_ASSERTION"
+      }
+    },
+    {
+      "id": "2.8.2-hotfix-conflict-BV1750_2",
+      "technical_version": "2.8.2-hotfix",
+      "validation_code": "BV1750_2",
+      "module": "arg",
+      "expected": {
+        "active_in_snapshot": null,
+        "reason": "RELATED_SNAPSHOT_CONFLICT",
+        "severity": "ERROR",
+        "implementation_channel": "XBRL_ASSERTION"
+      }
+    }
+  ]
+}

@@ -1,0 +1,336 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "cases": [
+    {
+      "id": "reporting-scope-balance-2.8.2-pass",
+      "technical_version": "2.8.2",
+      "module": "ars",
+      "validation_code": "BV186-1",
+      "filing_indicators": {
+        "S.02.01": true
+      },
+      "fact_context": {
+        "entity": "SYN:entity",
+        "period": "2027-12-31",
+        "unit": "EUR"
+      },
+      "binding_reference": "SYN-qualified-scoped-subset",
+      "facts": [
+        {
+          "cell": "{S.02.01.01.01,R1000,C0020}",
+          "context": {
+            "entity": "SYN:entity",
+            "period": "2027-12-31",
+            "unit": "EUR"
+          },
+          "fact": {
+            "value": "400",
+            "decimals": "INF"
+          }
+        },
+        {
+          "cell": "{S.02.01.01.01,R0500,C0020}",
+          "context": {
+            "entity": "SYN:entity",
+            "period": "2027-12-31",
+            "unit": "EUR"
+          },
+          "fact": {
+            "value": "1000",
+            "decimals": "INF"
+          }
+        },
+        {
+          "cell": "{S.02.01.01.01,R0900,C0020}",
+          "context": {
+            "entity": "SYN:entity",
+            "period": "2027-12-31",
+            "unit": "EUR"
+          },
+          "fact": {
+            "value": "600",
+            "decimals": "INF"
+          }
+        }
+      ],
+      "expected": true,
+      "derivation": "Exact400=1000-600;401!=1000-600. Source column scope C0020, actual two-dimensional business cells without fabricated sheet. No full-report validation."
+    },
+    {
+      "id": "reporting-scope-balance-2.8.2-fail",
+      "technical_version": "2.8.2",
+      "module": "ars",
+      "validation_code": "BV186-1",
+      "filing_indicators": {
+        "S.02.01": true
+      },
+      "fact_context": {
+        "entity": "SYN:entity",
+        "period": "2027-12-31",
+        "unit": "EUR"
+      },
+      "binding_reference": "SYN-qualified-scoped-subset",
+      "facts": [
+        {
+          "cell": "{S.02.01.01.01,R1000,C0020}",
+          "context": {
+            "entity": "SYN:entity",
+            "period": "2027-12-31",
+            "unit": "EUR"
+          },
+          "fact": {
+            "value": "401",
+            "decimals": "INF"
+          }
+        },
+        {
+          "cell": "{S.02.01.01.01,R0500,C0020}",
+          "context": {
+            "entity": "SYN:entity",
+            "period": "2027-12-31",
+            "unit": "EUR"
+          },
+          "fact": {
+            "value": "1000",
+            "decimals": "INF"
+          }
+        },
+        {
+          "cell": "{S.02.01.01.01,R0900,C0020}",
+          "context": {
+            "entity": "SYN:entity",
+            "period": "2027-12-31",
+            "unit": "EUR"
+          },
+          "fact": {
+            "value": "600",
+            "decimals": "INF"
+          }
+        }
+      ],
+      "expected": false,
+      "derivation": "Exact400=1000-600;401!=1000-600. Source column scope C0020, actual two-dimensional business cells without fabricated sheet. No full-report validation."
+    },
+    {
+      "id": "reporting-scope-balance-2.8.2-hotfix-pass",
+      "technical_version": "2.8.2-hotfix",
+      "module": "ars",
+      "validation_code": "BV186-1",
+      "filing_indicators": {
+        "S.02.01": true
+      },
+      "fact_context": {
+        "entity": "SYN:entity",
+        "period": "2027-12-31",
+        "unit": "EUR"
+      },
+      "binding_reference": "SYN-qualified-scoped-subset",
+      "facts": [
+        {
+          "cell": "{S.02.01.01.01,R1000,C0020}",
+          "context": {
+            "entity": "SYN:entity",
+            "period": "2027-12-31",
+            "unit": "EUR"
+          },
+          "fact": {
+            "value": "400",
+            "decimals": "INF"
+          }
+        },
+        {
+          "cell": "{S.02.01.01.01,R0500,C0020}",
+          "context": {
+            "entity": "SYN:entity",
+            "period": "2027-12-31",
+            "unit": "EUR"
+          },
+          "fact": {
+            "value": "1000",
+            "decimals": "INF"
+          }
+        },
+        {
+          "cell": "{S.02.01.01.01,R0900,C0020}",
+          "context": {
+            "entity": "SYN:entity",
+            "period": "2027-12-31",
+            "unit": "EUR"
+          },
+          "fact": {
+            "value": "600",
+            "decimals": "INF"
+          }
+        }
+      ],
+      "expected": true,
+      "derivation": "Exact400=1000-600;401!=1000-600. Source column scope C0020, actual two-dimensional business cells without fabricated sheet. No full-report validation."
+    },
+    {
+      "id": "reporting-scope-balance-2.8.2-hotfix-fail",
+      "technical_version": "2.8.2-hotfix",
+      "module": "ars",
+      "validation_code": "BV186-1",
+      "filing_indicators": {
+        "S.02.01": true
+      },
+      "fact_context": {
+        "entity": "SYN:entity",
+        "period": "2027-12-31",
+        "unit": "EUR"
+      },
+      "binding_reference": "SYN-qualified-scoped-subset",
+      "facts": [
+        {
+          "cell": "{S.02.01.01.01,R1000,C0020}",
+          "context": {
+            "entity": "SYN:entity",
+            "period": "2027-12-31",
+            "unit": "EUR"
+          },
+          "fact": {
+            "value": "401",
+            "decimals": "INF"
+          }
+        },
+        {
+          "cell": "{S.02.01.01.01,R0500,C0020}",
+          "context": {
+            "entity": "SYN:entity",
+            "period": "2027-12-31",
+            "unit": "EUR"
+          },
+          "fact": {
+            "value": "1000",
+            "decimals": "INF"
+          }
+        },
+        {
+          "cell": "{S.02.01.01.01,R0900,C0020}",
+          "context": {
+            "entity": "SYN:entity",
+            "period": "2027-12-31",
+            "unit": "EUR"
+          },
+          "fact": {
+            "value": "600",
+            "decimals": "INF"
+          }
+        }
+      ],
+      "expected": false,
+      "derivation": "Exact400=1000-600;401!=1000-600. Source column scope C0020, actual two-dimensional business cells without fabricated sheet. No full-report validation."
+    },
+    {
+      "id": "reporting-scope-balance-2.10.0-pass",
+      "technical_version": "2.10.0",
+      "module": "ars",
+      "validation_code": "BV186-1",
+      "filing_indicators": {
+        "S.02.01": true
+      },
+      "fact_context": {
+        "entity": "SYN:entity",
+        "period": "2027-12-31",
+        "unit": "EUR"
+      },
+      "binding_reference": "SYN-qualified-scoped-subset",
+      "facts": [
+        {
+          "cell": "{S.02.01.01.01,R1000,C0020}",
+          "context": {
+            "entity": "SYN:entity",
+            "period": "2027-12-31",
+            "unit": "EUR"
+          },
+          "fact": {
+            "value": "400",
+            "decimals": "INF"
+          }
+        },
+        {
+          "cell": "{S.02.01.01.01,R0500,C0020}",
+          "context": {
+            "entity": "SYN:entity",
+            "period": "2027-12-31",
+            "unit": "EUR"
+          },
+          "fact": {
+            "value": "1000",
+            "decimals": "INF"
+          }
+        },
+        {
+          "cell": "{S.02.01.01.01,R0900,C0020}",
+          "context": {
+            "entity": "SYN:entity",
+            "period": "2027-12-31",
+            "unit": "EUR"
+          },
+          "fact": {
+            "value": "600",
+            "decimals": "INF"
+          }
+        }
+      ],
+      "expected": true,
+      "derivation": "Exact400=1000-600;401!=1000-600. Source column scope C0020, actual two-dimensional business cells without fabricated sheet. No full-report validation."
+    },
+    {
+      "id": "reporting-scope-balance-2.10.0-fail",
+      "technical_version": "2.10.0",
+      "module": "ars",
+      "validation_code": "BV186-1",
+      "filing_indicators": {
+        "S.02.01": true
+      },
+      "fact_context": {
+        "entity": "SYN:entity",
+        "period": "2027-12-31",
+        "unit": "EUR"
+      },
+      "binding_reference": "SYN-qualified-scoped-subset",
+      "facts": [
+        {
+          "cell": "{S.02.01.01.01,R1000,C0020}",
+          "context": {
+            "entity": "SYN:entity",
+            "period": "2027-12-31",
+            "unit": "EUR"
+          },
+          "fact": {
+            "value": "401",
+            "decimals": "INF"
+          }
+        },
+        {
+          "cell": "{S.02.01.01.01,R0500,C0020}",
+          "context": {
+            "entity": "SYN:entity",
+            "period": "2027-12-31",
+            "unit": "EUR"
+          },
+          "fact": {
+            "value": "1000",
+            "decimals": "INF"
+          }
+        },
+        {
+          "cell": "{S.02.01.01.01,R0900,C0020}",
+          "context": {
+            "entity": "SYN:entity",
+            "period": "2027-12-31",
+            "unit": "EUR"
+          },
+          "fact": {
+            "value": "600",
+            "decimals": "INF"
+          }
+        }
+      ],
+      "expected": false,
+      "derivation": "Exact400=1000-600;401!=1000-600. Source column scope C0020, actual two-dimensional business cells without fabricated sheet. No full-report validation."
+    }
+  ]
+}

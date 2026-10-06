@@ -1,0 +1,1929 @@
+{
+  "status": "SYNTHETIC_FILTERED_BOUND_EXPRESSION_CASES_NOT_FULL_REPORTS",
+  "qualification": "Explicit externally qualified candidate sets and dimensions. DPM local filters are evaluated; complete XBRL selection, defaults and dimension admissibility are not certified. Source reporting exp(31,1,2)=5.5677 by four-decimal truncation, not ordinary rounded sqrt.",
+  "cases": [
+    {
+      "id": "context-2.8.2-root-pass",
+      "technical_version": "2.8.2",
+      "validation_code": "BV913-2",
+      "bindings": {
+        "v1": {
+          "qname": {
+            "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/CN",
+            "local_name": "x1"
+          }
+        },
+        "v2": {
+          "fact": {
+            "value": "5.5677",
+            "decimals": 4
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x0"
+                }
+              }
+            }
+          ]
+        },
+        "v3": {
+          "fact": {
+            "value": 3,
+            "decimals": "INF"
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x0"
+                }
+              }
+            }
+          ]
+        },
+        "v4": {
+          "fact": {
+            "value": 4,
+            "decimals": "INF"
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x0"
+                }
+              }
+            }
+          ]
+        },
+        "v5": {
+          "fact": {
+            "value": 0,
+            "decimals": "INF"
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x0"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "binding_reference": "synthetic://explicit-complete-candidates-and-dimension-qualification",
+      "expected": true
+    },
+    {
+      "id": "context-2.8.2-root-fail",
+      "technical_version": "2.8.2",
+      "validation_code": "BV913-2",
+      "bindings": {
+        "v1": {
+          "qname": {
+            "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/CN",
+            "local_name": "x1"
+          }
+        },
+        "v2": {
+          "fact": {
+            "value": "5.5679",
+            "decimals": 4
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x0"
+                }
+              }
+            }
+          ]
+        },
+        "v3": {
+          "fact": {
+            "value": 3,
+            "decimals": "INF"
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x0"
+                }
+              }
+            }
+          ]
+        },
+        "v4": {
+          "fact": {
+            "value": 4,
+            "decimals": "INF"
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x0"
+                }
+              }
+            }
+          ]
+        },
+        "v5": {
+          "fact": {
+            "value": 0,
+            "decimals": "INF"
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x0"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "binding_reference": "synthetic://explicit-complete-candidates-and-dimension-qualification",
+      "expected": false
+    },
+    {
+      "id": "context-2.8.2-missing-dimension",
+      "technical_version": "2.8.2",
+      "validation_code": "BV913-2",
+      "bindings": {
+        "v1": {
+          "qname": {
+            "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/CN",
+            "local_name": "x1"
+          }
+        },
+        "v2": {
+          "fact": {
+            "value": "5.5677",
+            "decimals": 4
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x0"
+                }
+              }
+            }
+          ]
+        },
+        "v3": {
+          "value": 3,
+          "decimals": "INF"
+        },
+        "v4": {
+          "fact": {
+            "value": 4,
+            "decimals": "INF"
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x0"
+                }
+              }
+            }
+          ]
+        },
+        "v5": {
+          "fact": {
+            "value": 0,
+            "decimals": "INF"
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x0"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "binding_reference": "synthetic://explicit-complete-candidates-and-dimension-qualification",
+      "expected_error": "REVIEW_REQUIRED"
+    },
+    {
+      "id": "context-2.8.2-scalar-excluded-not-zero",
+      "technical_version": "2.8.2",
+      "validation_code": "BV913-2",
+      "bindings": {
+        "v1": {
+          "qname": {
+            "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/CN",
+            "local_name": "x1"
+          }
+        },
+        "v2": {
+          "fact": {
+            "value": "5.5677",
+            "decimals": 4
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x0"
+                }
+              }
+            }
+          ]
+        },
+        "v3": {
+          "fact": {
+            "value": 3,
+            "decimals": "INF"
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x1"
+                }
+              }
+            }
+          ]
+        },
+        "v4": {
+          "fact": {
+            "value": 4,
+            "decimals": "INF"
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x0"
+                }
+              }
+            }
+          ]
+        },
+        "v5": {
+          "fact": {
+            "value": 0,
+            "decimals": "INF"
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x0"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "binding_reference": "synthetic://explicit-complete-candidates-and-dimension-qualification",
+      "expected_error": "REVIEW_REQUIRED"
+    },
+    {
+      "id": "context-2.8.2-sum-selected",
+      "technical_version": "2.8.2",
+      "validation_code": "BV2120",
+      "bindings": {
+        "v0": {
+          "values": [
+            {
+              "fact": {
+                "value": 2,
+                "decimals": "INF"
+              },
+              "dimensions": [
+                {
+                  "dimension": {
+                    "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                    "local_name": "BL"
+                  },
+                  "value": {
+                    "qname": {
+                      "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/LB",
+                      "local_name": "x11"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "fact": {
+                "value": 3,
+                "decimals": "INF"
+              },
+              "dimensions": [
+                {
+                  "dimension": {
+                    "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                    "local_name": "BL"
+                  },
+                  "value": {
+                    "qname": {
+                      "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/LB",
+                      "local_name": "x11"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "fact": {
+                "value": 900,
+                "decimals": "INF"
+              },
+              "dimensions": [
+                {
+                  "dimension": {
+                    "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                    "local_name": "BL"
+                  },
+                  "value": {
+                    "qname": {
+                      "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/LB",
+                      "local_name": "x10"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "v2": {
+          "value": 5,
+          "decimals": "INF"
+        }
+      },
+      "binding_reference": "synthetic://explicit-complete-candidates-and-dimension-qualification",
+      "expected": true
+    },
+    {
+      "id": "context-2.8.2-sum-excluded-not-counted",
+      "technical_version": "2.8.2",
+      "validation_code": "BV2120",
+      "bindings": {
+        "v0": {
+          "values": [
+            {
+              "fact": {
+                "value": 2,
+                "decimals": "INF"
+              },
+              "dimensions": [
+                {
+                  "dimension": {
+                    "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                    "local_name": "BL"
+                  },
+                  "value": {
+                    "qname": {
+                      "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/LB",
+                      "local_name": "x11"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "fact": {
+                "value": 3,
+                "decimals": "INF"
+              },
+              "dimensions": [
+                {
+                  "dimension": {
+                    "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                    "local_name": "BL"
+                  },
+                  "value": {
+                    "qname": {
+                      "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/LB",
+                      "local_name": "x11"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "fact": {
+                "value": 900,
+                "decimals": "INF"
+              },
+              "dimensions": [
+                {
+                  "dimension": {
+                    "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                    "local_name": "BL"
+                  },
+                  "value": {
+                    "qname": {
+                      "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/LB",
+                      "local_name": "x10"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "v2": {
+          "value": 905,
+          "decimals": "INF"
+        }
+      },
+      "binding_reference": "synthetic://explicit-complete-candidates-and-dimension-qualification",
+      "expected": false
+    },
+    {
+      "id": "context-2.8.2-sum-all-filtered",
+      "technical_version": "2.8.2",
+      "validation_code": "BV2120",
+      "bindings": {
+        "v0": {
+          "values": [
+            {
+              "fact": {
+                "value": 900,
+                "decimals": "INF"
+              },
+              "dimensions": [
+                {
+                  "dimension": {
+                    "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                    "local_name": "BL"
+                  },
+                  "value": {
+                    "qname": {
+                      "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/LB",
+                      "local_name": "x10"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "v2": {
+          "value": 0,
+          "decimals": "INF"
+        }
+      },
+      "binding_reference": "synthetic://explicit-complete-candidates-and-dimension-qualification",
+      "expected": true
+    },
+    {
+      "id": "context-2.8.2-explicit-empty-sequence",
+      "technical_version": "2.8.2",
+      "validation_code": "BV2120",
+      "bindings": {
+        "v0": {
+          "values": []
+        },
+        "v2": {
+          "value": 0,
+          "decimals": "INF"
+        }
+      },
+      "binding_reference": "synthetic://explicit-complete-candidates-and-dimension-qualification",
+      "expected": true
+    },
+    {
+      "id": "context-2.8.2-sequence-missing-dimension",
+      "technical_version": "2.8.2",
+      "validation_code": "BV2120",
+      "bindings": {
+        "v0": {
+          "values": [
+            {
+              "value": 2,
+              "decimals": "INF"
+            }
+          ]
+        },
+        "v2": {
+          "value": 2,
+          "decimals": "INF"
+        }
+      },
+      "binding_reference": "synthetic://explicit-complete-candidates-and-dimension-qualification",
+      "expected_error": "REVIEW_REQUIRED"
+    },
+    {
+      "id": "context-2.8.2-duplicate-dimension",
+      "technical_version": "2.8.2",
+      "validation_code": "BV2120",
+      "bindings": {
+        "v0": {
+          "values": [
+            {
+              "fact": {
+                "value": 2,
+                "decimals": "INF"
+              },
+              "dimensions": [
+                {
+                  "dimension": {
+                    "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                    "local_name": "BL"
+                  },
+                  "value": {
+                    "qname": {
+                      "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/LB",
+                      "local_name": "x11"
+                    }
+                  }
+                },
+                {
+                  "dimension": {
+                    "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                    "local_name": "BL"
+                  },
+                  "value": {
+                    "qname": {
+                      "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/LB",
+                      "local_name": "x11"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "v2": {
+          "value": 2,
+          "decimals": "INF"
+        }
+      },
+      "binding_reference": "synthetic://explicit-complete-candidates-and-dimension-qualification",
+      "expected_error": "INVALID_INPUT"
+    },
+    {
+      "id": "context-2.8.2-hotfix-root-pass",
+      "technical_version": "2.8.2-hotfix",
+      "validation_code": "BV913-2",
+      "bindings": {
+        "v1": {
+          "qname": {
+            "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/CN",
+            "local_name": "x1"
+          }
+        },
+        "v2": {
+          "fact": {
+            "value": "5.5677",
+            "decimals": 4
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x0"
+                }
+              }
+            }
+          ]
+        },
+        "v3": {
+          "fact": {
+            "value": 3,
+            "decimals": "INF"
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x0"
+                }
+              }
+            }
+          ]
+        },
+        "v4": {
+          "fact": {
+            "value": 4,
+            "decimals": "INF"
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x0"
+                }
+              }
+            }
+          ]
+        },
+        "v5": {
+          "fact": {
+            "value": 0,
+            "decimals": "INF"
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x0"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "binding_reference": "synthetic://explicit-complete-candidates-and-dimension-qualification",
+      "expected": true
+    },
+    {
+      "id": "context-2.8.2-hotfix-root-fail",
+      "technical_version": "2.8.2-hotfix",
+      "validation_code": "BV913-2",
+      "bindings": {
+        "v1": {
+          "qname": {
+            "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/CN",
+            "local_name": "x1"
+          }
+        },
+        "v2": {
+          "fact": {
+            "value": "5.5679",
+            "decimals": 4
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x0"
+                }
+              }
+            }
+          ]
+        },
+        "v3": {
+          "fact": {
+            "value": 3,
+            "decimals": "INF"
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x0"
+                }
+              }
+            }
+          ]
+        },
+        "v4": {
+          "fact": {
+            "value": 4,
+            "decimals": "INF"
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x0"
+                }
+              }
+            }
+          ]
+        },
+        "v5": {
+          "fact": {
+            "value": 0,
+            "decimals": "INF"
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x0"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "binding_reference": "synthetic://explicit-complete-candidates-and-dimension-qualification",
+      "expected": false
+    },
+    {
+      "id": "context-2.8.2-hotfix-missing-dimension",
+      "technical_version": "2.8.2-hotfix",
+      "validation_code": "BV913-2",
+      "bindings": {
+        "v1": {
+          "qname": {
+            "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/CN",
+            "local_name": "x1"
+          }
+        },
+        "v2": {
+          "fact": {
+            "value": "5.5677",
+            "decimals": 4
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x0"
+                }
+              }
+            }
+          ]
+        },
+        "v3": {
+          "value": 3,
+          "decimals": "INF"
+        },
+        "v4": {
+          "fact": {
+            "value": 4,
+            "decimals": "INF"
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x0"
+                }
+              }
+            }
+          ]
+        },
+        "v5": {
+          "fact": {
+            "value": 0,
+            "decimals": "INF"
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x0"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "binding_reference": "synthetic://explicit-complete-candidates-and-dimension-qualification",
+      "expected_error": "REVIEW_REQUIRED"
+    },
+    {
+      "id": "context-2.8.2-hotfix-scalar-excluded-not-zero",
+      "technical_version": "2.8.2-hotfix",
+      "validation_code": "BV913-2",
+      "bindings": {
+        "v1": {
+          "qname": {
+            "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/CN",
+            "local_name": "x1"
+          }
+        },
+        "v2": {
+          "fact": {
+            "value": "5.5677",
+            "decimals": 4
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x0"
+                }
+              }
+            }
+          ]
+        },
+        "v3": {
+          "fact": {
+            "value": 3,
+            "decimals": "INF"
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x1"
+                }
+              }
+            }
+          ]
+        },
+        "v4": {
+          "fact": {
+            "value": 4,
+            "decimals": "INF"
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x0"
+                }
+              }
+            }
+          ]
+        },
+        "v5": {
+          "fact": {
+            "value": 0,
+            "decimals": "INF"
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x0"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "binding_reference": "synthetic://explicit-complete-candidates-and-dimension-qualification",
+      "expected_error": "REVIEW_REQUIRED"
+    },
+    {
+      "id": "context-2.8.2-hotfix-sum-selected",
+      "technical_version": "2.8.2-hotfix",
+      "validation_code": "BV2120",
+      "bindings": {
+        "v0": {
+          "values": [
+            {
+              "fact": {
+                "value": 2,
+                "decimals": "INF"
+              },
+              "dimensions": [
+                {
+                  "dimension": {
+                    "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                    "local_name": "BL"
+                  },
+                  "value": {
+                    "qname": {
+                      "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/LB",
+                      "local_name": "x11"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "fact": {
+                "value": 3,
+                "decimals": "INF"
+              },
+              "dimensions": [
+                {
+                  "dimension": {
+                    "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                    "local_name": "BL"
+                  },
+                  "value": {
+                    "qname": {
+                      "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/LB",
+                      "local_name": "x11"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "fact": {
+                "value": 900,
+                "decimals": "INF"
+              },
+              "dimensions": [
+                {
+                  "dimension": {
+                    "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                    "local_name": "BL"
+                  },
+                  "value": {
+                    "qname": {
+                      "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/LB",
+                      "local_name": "x10"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "v2": {
+          "value": 5,
+          "decimals": "INF"
+        }
+      },
+      "binding_reference": "synthetic://explicit-complete-candidates-and-dimension-qualification",
+      "expected": true
+    },
+    {
+      "id": "context-2.8.2-hotfix-sum-excluded-not-counted",
+      "technical_version": "2.8.2-hotfix",
+      "validation_code": "BV2120",
+      "bindings": {
+        "v0": {
+          "values": [
+            {
+              "fact": {
+                "value": 2,
+                "decimals": "INF"
+              },
+              "dimensions": [
+                {
+                  "dimension": {
+                    "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                    "local_name": "BL"
+                  },
+                  "value": {
+                    "qname": {
+                      "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/LB",
+                      "local_name": "x11"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "fact": {
+                "value": 3,
+                "decimals": "INF"
+              },
+              "dimensions": [
+                {
+                  "dimension": {
+                    "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                    "local_name": "BL"
+                  },
+                  "value": {
+                    "qname": {
+                      "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/LB",
+                      "local_name": "x11"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "fact": {
+                "value": 900,
+                "decimals": "INF"
+              },
+              "dimensions": [
+                {
+                  "dimension": {
+                    "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                    "local_name": "BL"
+                  },
+                  "value": {
+                    "qname": {
+                      "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/LB",
+                      "local_name": "x10"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "v2": {
+          "value": 905,
+          "decimals": "INF"
+        }
+      },
+      "binding_reference": "synthetic://explicit-complete-candidates-and-dimension-qualification",
+      "expected": false
+    },
+    {
+      "id": "context-2.8.2-hotfix-sum-all-filtered",
+      "technical_version": "2.8.2-hotfix",
+      "validation_code": "BV2120",
+      "bindings": {
+        "v0": {
+          "values": [
+            {
+              "fact": {
+                "value": 900,
+                "decimals": "INF"
+              },
+              "dimensions": [
+                {
+                  "dimension": {
+                    "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                    "local_name": "BL"
+                  },
+                  "value": {
+                    "qname": {
+                      "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/LB",
+                      "local_name": "x10"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "v2": {
+          "value": 0,
+          "decimals": "INF"
+        }
+      },
+      "binding_reference": "synthetic://explicit-complete-candidates-and-dimension-qualification",
+      "expected": true
+    },
+    {
+      "id": "context-2.8.2-hotfix-explicit-empty-sequence",
+      "technical_version": "2.8.2-hotfix",
+      "validation_code": "BV2120",
+      "bindings": {
+        "v0": {
+          "values": []
+        },
+        "v2": {
+          "value": 0,
+          "decimals": "INF"
+        }
+      },
+      "binding_reference": "synthetic://explicit-complete-candidates-and-dimension-qualification",
+      "expected": true
+    },
+    {
+      "id": "context-2.8.2-hotfix-sequence-missing-dimension",
+      "technical_version": "2.8.2-hotfix",
+      "validation_code": "BV2120",
+      "bindings": {
+        "v0": {
+          "values": [
+            {
+              "value": 2,
+              "decimals": "INF"
+            }
+          ]
+        },
+        "v2": {
+          "value": 2,
+          "decimals": "INF"
+        }
+      },
+      "binding_reference": "synthetic://explicit-complete-candidates-and-dimension-qualification",
+      "expected_error": "REVIEW_REQUIRED"
+    },
+    {
+      "id": "context-2.8.2-hotfix-duplicate-dimension",
+      "technical_version": "2.8.2-hotfix",
+      "validation_code": "BV2120",
+      "bindings": {
+        "v0": {
+          "values": [
+            {
+              "fact": {
+                "value": 2,
+                "decimals": "INF"
+              },
+              "dimensions": [
+                {
+                  "dimension": {
+                    "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                    "local_name": "BL"
+                  },
+                  "value": {
+                    "qname": {
+                      "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/LB",
+                      "local_name": "x11"
+                    }
+                  }
+                },
+                {
+                  "dimension": {
+                    "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                    "local_name": "BL"
+                  },
+                  "value": {
+                    "qname": {
+                      "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/LB",
+                      "local_name": "x11"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "v2": {
+          "value": 2,
+          "decimals": "INF"
+        }
+      },
+      "binding_reference": "synthetic://explicit-complete-candidates-and-dimension-qualification",
+      "expected_error": "INVALID_INPUT"
+    },
+    {
+      "id": "context-2.10.0-root-pass",
+      "technical_version": "2.10.0",
+      "validation_code": "BV913-2",
+      "bindings": {
+        "v1": {
+          "qname": {
+            "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/CN",
+            "local_name": "x1"
+          }
+        },
+        "v2": {
+          "fact": {
+            "value": "5.5677",
+            "decimals": 4
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x0"
+                }
+              }
+            }
+          ]
+        },
+        "v3": {
+          "fact": {
+            "value": 3,
+            "decimals": "INF"
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x0"
+                }
+              }
+            }
+          ]
+        },
+        "v4": {
+          "fact": {
+            "value": 4,
+            "decimals": "INF"
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x0"
+                }
+              }
+            }
+          ]
+        },
+        "v5": {
+          "fact": {
+            "value": 0,
+            "decimals": "INF"
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x0"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "binding_reference": "synthetic://explicit-complete-candidates-and-dimension-qualification",
+      "expected": true
+    },
+    {
+      "id": "context-2.10.0-root-fail",
+      "technical_version": "2.10.0",
+      "validation_code": "BV913-2",
+      "bindings": {
+        "v1": {
+          "qname": {
+            "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/CN",
+            "local_name": "x1"
+          }
+        },
+        "v2": {
+          "fact": {
+            "value": "5.5679",
+            "decimals": 4
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x0"
+                }
+              }
+            }
+          ]
+        },
+        "v3": {
+          "fact": {
+            "value": 3,
+            "decimals": "INF"
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x0"
+                }
+              }
+            }
+          ]
+        },
+        "v4": {
+          "fact": {
+            "value": 4,
+            "decimals": "INF"
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x0"
+                }
+              }
+            }
+          ]
+        },
+        "v5": {
+          "fact": {
+            "value": 0,
+            "decimals": "INF"
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x0"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "binding_reference": "synthetic://explicit-complete-candidates-and-dimension-qualification",
+      "expected": false
+    },
+    {
+      "id": "context-2.10.0-missing-dimension",
+      "technical_version": "2.10.0",
+      "validation_code": "BV913-2",
+      "bindings": {
+        "v1": {
+          "qname": {
+            "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/CN",
+            "local_name": "x1"
+          }
+        },
+        "v2": {
+          "fact": {
+            "value": "5.5677",
+            "decimals": 4
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x0"
+                }
+              }
+            }
+          ]
+        },
+        "v3": {
+          "value": 3,
+          "decimals": "INF"
+        },
+        "v4": {
+          "fact": {
+            "value": 4,
+            "decimals": "INF"
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x0"
+                }
+              }
+            }
+          ]
+        },
+        "v5": {
+          "fact": {
+            "value": 0,
+            "decimals": "INF"
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x0"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "binding_reference": "synthetic://explicit-complete-candidates-and-dimension-qualification",
+      "expected_error": "REVIEW_REQUIRED"
+    },
+    {
+      "id": "context-2.10.0-scalar-excluded-not-zero",
+      "technical_version": "2.10.0",
+      "validation_code": "BV913-2",
+      "bindings": {
+        "v1": {
+          "qname": {
+            "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/CN",
+            "local_name": "x1"
+          }
+        },
+        "v2": {
+          "fact": {
+            "value": "5.5677",
+            "decimals": 4
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x0"
+                }
+              }
+            }
+          ]
+        },
+        "v3": {
+          "fact": {
+            "value": 3,
+            "decimals": "INF"
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x1"
+                }
+              }
+            }
+          ]
+        },
+        "v4": {
+          "fact": {
+            "value": 4,
+            "decimals": "INF"
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x0"
+                }
+              }
+            }
+          ]
+        },
+        "v5": {
+          "fact": {
+            "value": 0,
+            "decimals": "INF"
+          },
+          "dimensions": [
+            {
+              "dimension": {
+                "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                "local_name": "AO"
+              },
+              "value": {
+                "qname": {
+                  "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO",
+                  "local_name": "x0"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "binding_reference": "synthetic://explicit-complete-candidates-and-dimension-qualification",
+      "expected_error": "REVIEW_REQUIRED"
+    },
+    {
+      "id": "context-2.10.0-sum-selected",
+      "technical_version": "2.10.0",
+      "validation_code": "BV2120",
+      "bindings": {
+        "v0": {
+          "values": [
+            {
+              "fact": {
+                "value": 2,
+                "decimals": "INF"
+              },
+              "dimensions": [
+                {
+                  "dimension": {
+                    "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                    "local_name": "BL"
+                  },
+                  "value": {
+                    "qname": {
+                      "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/LB",
+                      "local_name": "x11"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "fact": {
+                "value": 3,
+                "decimals": "INF"
+              },
+              "dimensions": [
+                {
+                  "dimension": {
+                    "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                    "local_name": "BL"
+                  },
+                  "value": {
+                    "qname": {
+                      "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/LB",
+                      "local_name": "x11"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "fact": {
+                "value": 900,
+                "decimals": "INF"
+              },
+              "dimensions": [
+                {
+                  "dimension": {
+                    "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                    "local_name": "BL"
+                  },
+                  "value": {
+                    "qname": {
+                      "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/LB",
+                      "local_name": "x10"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "v2": {
+          "value": 5,
+          "decimals": "INF"
+        }
+      },
+      "binding_reference": "synthetic://explicit-complete-candidates-and-dimension-qualification",
+      "expected": true
+    },
+    {
+      "id": "context-2.10.0-sum-excluded-not-counted",
+      "technical_version": "2.10.0",
+      "validation_code": "BV2120",
+      "bindings": {
+        "v0": {
+          "values": [
+            {
+              "fact": {
+                "value": 2,
+                "decimals": "INF"
+              },
+              "dimensions": [
+                {
+                  "dimension": {
+                    "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                    "local_name": "BL"
+                  },
+                  "value": {
+                    "qname": {
+                      "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/LB",
+                      "local_name": "x11"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "fact": {
+                "value": 3,
+                "decimals": "INF"
+              },
+              "dimensions": [
+                {
+                  "dimension": {
+                    "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                    "local_name": "BL"
+                  },
+                  "value": {
+                    "qname": {
+                      "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/LB",
+                      "local_name": "x11"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "fact": {
+                "value": 900,
+                "decimals": "INF"
+              },
+              "dimensions": [
+                {
+                  "dimension": {
+                    "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                    "local_name": "BL"
+                  },
+                  "value": {
+                    "qname": {
+                      "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/LB",
+                      "local_name": "x10"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "v2": {
+          "value": 905,
+          "decimals": "INF"
+        }
+      },
+      "binding_reference": "synthetic://explicit-complete-candidates-and-dimension-qualification",
+      "expected": false
+    },
+    {
+      "id": "context-2.10.0-sum-all-filtered",
+      "technical_version": "2.10.0",
+      "validation_code": "BV2120",
+      "bindings": {
+        "v0": {
+          "values": [
+            {
+              "fact": {
+                "value": 900,
+                "decimals": "INF"
+              },
+              "dimensions": [
+                {
+                  "dimension": {
+                    "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                    "local_name": "BL"
+                  },
+                  "value": {
+                    "qname": {
+                      "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/LB",
+                      "local_name": "x10"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "v2": {
+          "value": 0,
+          "decimals": "INF"
+        }
+      },
+      "binding_reference": "synthetic://explicit-complete-candidates-and-dimension-qualification",
+      "expected": true
+    },
+    {
+      "id": "context-2.10.0-explicit-empty-sequence",
+      "technical_version": "2.10.0",
+      "validation_code": "BV2120",
+      "bindings": {
+        "v0": {
+          "values": []
+        },
+        "v2": {
+          "value": 0,
+          "decimals": "INF"
+        }
+      },
+      "binding_reference": "synthetic://explicit-complete-candidates-and-dimension-qualification",
+      "expected": true
+    },
+    {
+      "id": "context-2.10.0-sequence-missing-dimension",
+      "technical_version": "2.10.0",
+      "validation_code": "BV2120",
+      "bindings": {
+        "v0": {
+          "values": [
+            {
+              "value": 2,
+              "decimals": "INF"
+            }
+          ]
+        },
+        "v2": {
+          "value": 2,
+          "decimals": "INF"
+        }
+      },
+      "binding_reference": "synthetic://explicit-complete-candidates-and-dimension-qualification",
+      "expected_error": "REVIEW_REQUIRED"
+    },
+    {
+      "id": "context-2.10.0-duplicate-dimension",
+      "technical_version": "2.10.0",
+      "validation_code": "BV2120",
+      "bindings": {
+        "v0": {
+          "values": [
+            {
+              "fact": {
+                "value": 2,
+                "decimals": "INF"
+              },
+              "dimensions": [
+                {
+                  "dimension": {
+                    "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                    "local_name": "BL"
+                  },
+                  "value": {
+                    "qname": {
+                      "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/LB",
+                      "local_name": "x11"
+                    }
+                  }
+                },
+                {
+                  "dimension": {
+                    "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dim",
+                    "local_name": "BL"
+                  },
+                  "value": {
+                    "qname": {
+                      "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/LB",
+                      "local_name": "x11"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "v2": {
+          "value": 2,
+          "decimals": "INF"
+        }
+      },
+      "binding_reference": "synthetic://explicit-complete-candidates-and-dimension-qualification",
+      "expected_error": "INVALID_INPUT"
+    }
+  ]
+}

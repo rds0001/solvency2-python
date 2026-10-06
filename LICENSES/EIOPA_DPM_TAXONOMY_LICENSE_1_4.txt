@@ -1,0 +1,231 @@
+      XBRL Taxonomy Licence Agreement - XBRL taxonomy documentation
+
+                                     Licence Agreement
+
+                                       XBRL Taxonomy
+
+                             Version number: 1.4 – 07/10/2025
+
+
+
+The XBRL Taxonomy, its supporting documentation and other items of the Release
+Package (hereinafter altogether the “Taxonomy”) is available for download under this
+link:
+
+https://www.eiopa.europa.eu/tools-and-data/supervisory-reporting-dpm-and-xbrl_en
+
+The Release Package of the Taxonomy includes:
+
+i. The Release notes
+
+ii. The DPM Dictionary and Annotated Templates workbooks
+
+iii. The detailed change log
+
+iv. The DPM documentation
+
+v. The List of validations
+
+vi. The Solvency II validation syntax
+
+vii. The XBRL taxonomy
+
+viii. XBRL instance examples
+
+ix. The XBRL taxonomy documentation
+
+x. The XBRL Filing Rules
+
+xi. The DPM database
+
+xii. The list of known issues
+
+By downloading the Taxonomy, You agree with the following terms and conditions of this
+Licence Agreement (hereinafter “the Agreement”). Any use of the Taxonomy, other than
+as authorised under this Agreement is prohibited.
+
+1. Copyright ownership
+
+The Taxonomy is the exclusive copyright of EIOPA, European Insurance and Occupational
+Pensions Authority, Westhafenplatz 1, 60327 Frankfurt am Main, Germany (hereinafter
+"EIOPA"). None of the provisions of this Agreement are intended to deprive EIOPA of its
+rights as the copyright owner.
+
+2. Scope of the rights granted by EIOPA
+EIOPA hereby grants You a perpetual, world-wide, royalty-free, non-exclusive, sub-
+licensable, non-assignable right of use of the Taxonomy in the context of the following
+activities (hereinafter "the Licence"):
+
+   •   use the Taxonomy;
+   •   reproduce the Taxonomy;
+   •   create derivative works, based upon the Taxonomy or modifications thereof
+       (hereinafter "Derivative Works"), subject to the limitations of Section 5;
+   •   use, embed or integrate the taxonomy in a software. For the avoidance of doubt,
+       the software part is not considered to be Derivative Works and is thus not subject
+       to the limitations of Section 5;
+   •   communicate the Taxonomy to the public;
+   •   distribute the Taxonomy or copies thereof;
+   •   lend and rent the Taxonomy or copies thereof;
+   •   sub-license licence rights in the Taxonomy or copies thereof.
+
+Those rights can be exercised on any media, supports and formats, whether now known
+or later invented, as far as the applicable law permits so.
+
+Abovementioned rights can be exercised for commercial and non-commercial purposes
+provided that it is mentioned that (i) EIOPA is the owner of the copyright on the Taxonomy
+and that (ii) the Taxonomy is available for download, free of charge, on the following
+website: https://www.eiopa.europa.eu/tools-and-data/supervisory-reporting-dpm-and-xbrl_en,
+or whichever website EIOPA is then using to make the download of the Taxonomy possible.
+
+The Taxonomy may contain or make reference to third-party pre-existing works, which are
+protected by intellectual property rights such as copyrights, tradenames or similar rights,
+and may be subject to other terms and conditions. Any use, reproduction, modification,
+communication or distribution of these pre-existing works, shall be subject to the
+authorisation of the owner of those third-party pre-existing works.
+
+3. Term
+
+The Agreement shall enter into effect on the date that You download the Taxonomy.
+
+4. Licence fees
+
+The Licence is granted free of charge.
+
+5. Obligations of the Licensee
+
+The Licensee is subject to the following obligations:
+
+Attribution right: You must keep intact all copyright, patent or trademarks notices and
+all notices that refer to the Licence and to the disclaimer of warranties and liabilities. You
+must include a copy of such notices and a copy of the Licence with every copy of the
+Taxonomy or each Derivative Work that is created. You must cause any Derivative Work
+to carry prominent notices stating that the Taxonomy has been modified and the date of
+modification.
+
+Licence Back of Derivative Works: You hereby agree to grant EIOPA a world-wide,
+royalty-free, non-exclusive and sub-licensable right of use on all the intellectual property
+rights vested in each Derivative Work created by You (hereinafter “License Back”). The
+grant of this License Back occurs automatically at the respective moment of creation and
+includes a right to do the following, for the duration of copyright vested in the Derivative
+Work:
+
+   •   use the Derivative Work in any circumstance and for all usage,
+   •   reproduce the Derivative Work,
+   •   modify the Derivative Work, and make Derivative Works based upon the
+       Derivative Work,
+   •   communicate to the public, including the right to make available or display the
+       Derivative Work or copies thereof to the public and perform publicly, as the case
+       may be, the Derivative Work,
+   •   distribute the Derivative Work or copies thereof,
+   •   lend and rent the Derivative Work or copies thereof,
+   •   sub-licence rights in the Derivative Work or copies thereof.
+
+Upon EIOPA's request, You shall deliver a copy of the Derivative Work and all relevant
+documentation to EIOPA, meeting the highest professional standards and everything that
+is necessary or useful in order for EIOPA to understand, use and modify the Derivative
+Work. The copy of the Derivative Work and all the relevant documentation shall be
+delivered at the following address: xbrl@eiopa.europa.eu within one month upon reception
+of EIOPA's request.
+
+The License Back is granted under the same terms and conditions as this License, including
+the disclaimer of warranty under section 6.
+
+Information right: You shall retain a structured and up-to-date register which includes
+all Derivative Works created by You. EIOPA retains the right to request additional
+information, gain access to all information regarding the Derivative Works created by You
+and verify Your compliance with this Agreement.
+
+6. Disclaimer of Warranty
+
+The Taxonomy is provided under the Licence on an "as is" basis and without warranties of
+any kind, such as limitation on merchantability, fitness for a particular purpose, absence
+of any interruption of access or errors in accessing, absence of defects or errors, the results
+obtained with the Taxonomy in terms of accuracy, correctness or reliability, non-
+infringement of intellectual property rights. This disclaimer of warranty is an essential part
+of the License and a condition for the grant of any rights of use with regard to the
+Taxonomy.
+
+7. Disclaimer of Liability
+
+The Taxonomy is a work in progress, which is continuously improved through the creation
+of Derivative Works by contributors such as You. This work may contain defects or "bugs".
+
+In no event shall EIOPA be liable for any special, direct, indirect or consequential damages
+or any damages whatsoever resulting from loss of use, data or profits, whether in contract
+or in tort, arising out of or in connection with the use or performance of the Taxonomy,
+including without limitation, damages for loss of goodwill, work stoppage, computer failure
+or malfunction, loss of data or any commercial damage, even if EIOPA has been advised
+of the possibility of such damage.
+
+The entire risk as to the quality and performance of the Taxonomy is with You. In the event
+that the Taxonomy proves to be defective, You assume the cost of all necessary servicing,
+repair or correction. In any event, the total aggregate liability of EIOPA for all claims arising
+out of or being the cause of any action(s) under or in connection with this License shall not
+exceed the amount of 5.000,00 €.
+In no event shall EIOPA be liable for any damages arising from the unauthorized
+reproduction, modification, communication or distribution of third-party pre-existing works
+within the Taxonomy.
+
+8. Maintenance and support
+
+EIOPA may at its own discretion, though without any obligation make available new
+releases, upgrades or new versions of the Taxonomy on the following website:
+https://www.eiopa.europa.eu/tools-and-data/supervisory-reporting-dpm-and-xbrl_en.
+
+9. Acceptance of the Licence
+
+The provisions of this Licence can be accepted by clicking on an icon "I agree" placed under
+the bottom of a window displaying the text of this Licence or by affirming consent in any
+other similar way, in accordance with the rules of applicable law. Clicking on that icon
+indicates your clear and irrevocable acceptance of this Licence and all of its terms and
+conditions.
+
+Similarly, you irrevocably accept this Licence and all of its terms and conditions by
+downloading the Taxonomy or by exercising any rights granted to You by Article 2 of this
+Licence, such as the use of the Taxonomy or the creation by You of a Derivative Work.
+
+10. Termination of the Licence
+
+The Agreement and Licence granted hereunder will terminate automatically, and without
+prior intervention of the court, upon any breach of the licence conditions by You.
+
+In the event of termination of the present Agreement due to such default on Your part,
+You must immediately:
+
+   •   cease all use of the Taxonomy;
+   •   return or destroy at Your own expense the originals and all copies of the
+       Taxonomy;
+   •   certify to EIOPA, by registered letter, that You have complied with the above-
+       mentioned obligations within thirty (30) calendar days.
+
+11. Miscellaneous
+
+This Agreement represents the complete agreement between You and EIOPA as to the
+Taxonomy licenced hereunder.
+
+If any provision of the Licence is invalid or unenforceable under applicable law, this will not
+affect the validity or enforceability of the Licence as a whole. Such provision will be
+construed and/or reformed so as necessary to make it valid and enforceable.
+
+Both You and EIOPA explicitly agree that any term of the present Agreement by nature
+intended to survive termination, shall survive the termination of the Agreement for
+whichever reason.
+
+EIOPA reserves the right to modify this Agreement from time to time. In such event the
+new version of the terms and conditions of this Agreement as published on the following
+website https://www.eiopa.europa.eu/tools-and-data/supervisory-reporting-dpm-and-xbrl_en,
+shall apply to this Agreement.
+
+12. Applicable Law & jurisdiction
+This Licence shall be governed by the law of the European Union, complemented, where
+necessary, by German law.
+
+Any litigation arising between You and EIOPA, and resulting from the interpretation of this
+Licence, will be subject to the exclusive jurisdiction of the courts of Frankfurt am Main,
+Germany.
+
+
+
+
+Version number: 1.4 – 07/10/2025
+

@@ -1,0 +1,510 @@
+{
+  "status": "SYNTHETIC_REPORTING_COMPONENT_CHAINS_NOT_FULL_REPORTS",
+  "qualification": "Exact archived cells/metrics and declared contexts only. Component conjunction is not full report validation or current/legal filing eligibility.",
+  "portfolios": [
+    {
+      "id": "reporting-chain-2.8.2-components-pass",
+      "technical_version": "2.8.2",
+      "module": "ars",
+      "validation_code": "BV1853",
+      "filing_indicators": {
+        "S.26.13": true
+      },
+      "fact_context": {
+        "entity": "synthetic-insurer",
+        "period": "2026-12-31",
+        "unit": "not-applicable"
+      },
+      "binding_reference": "synthetic://qualified-reporting-component-chain",
+      "facts": [
+        {
+          "cell": "{S.26.13.01.14,R2030,C0440,Z0001}",
+          "context": {
+            "entity": "synthetic-insurer",
+            "period": "2026-12-31",
+            "unit": "not-applicable"
+          },
+          "fact": {
+            "qname": {
+              "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/RT",
+              "local_name": "x126"
+            }
+          }
+        },
+        {
+          "cell": "{S.26.13.01.14,R2040,C0440,Z0001}",
+          "context": {
+            "entity": "synthetic-insurer",
+            "period": "2026-12-31",
+            "unit": "not-applicable"
+          },
+          "fact": {
+            "text": "synthetic-other-peril"
+          }
+        }
+      ],
+      "metric_codes": {
+        "{S.26.13.01.14,R2030,C0440,Z0001}": "ei2578",
+        "{S.26.13.01.14,R2040,C0440,Z0001}": "si2627"
+      },
+      "expected": {
+        "archived_rule_active": true,
+        "filing_precondition_met": true,
+        "metric_values": [
+          true,
+          true
+        ],
+        "expression": true,
+        "all_checked_components_pass": true
+      }
+    },
+    {
+      "id": "reporting-chain-2.8.2-domain-fails-expression-passes",
+      "technical_version": "2.8.2",
+      "module": "ars",
+      "validation_code": "BV1853",
+      "filing_indicators": {
+        "S.26.13": true
+      },
+      "fact_context": {
+        "entity": "synthetic-insurer",
+        "period": "2026-12-31",
+        "unit": "not-applicable"
+      },
+      "binding_reference": "synthetic://qualified-reporting-component-chain",
+      "facts": [
+        {
+          "cell": "{S.26.13.01.14,R2030,C0440,Z0001}",
+          "context": {
+            "entity": "synthetic-insurer",
+            "period": "2026-12-31",
+            "unit": "not-applicable"
+          },
+          "fact": {
+            "qname": {
+              "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/RT",
+              "local_name": "x256"
+            }
+          }
+        },
+        {
+          "cell": "{S.26.13.01.14,R2040,C0440,Z0001}",
+          "context": {
+            "entity": "synthetic-insurer",
+            "period": "2026-12-31",
+            "unit": "not-applicable"
+          },
+          "fact": {
+            "text": "synthetic-other-peril"
+          }
+        }
+      ],
+      "metric_codes": {
+        "{S.26.13.01.14,R2030,C0440,Z0001}": "ei2578",
+        "{S.26.13.01.14,R2040,C0440,Z0001}": "si2627"
+      },
+      "expected": {
+        "archived_rule_active": true,
+        "filing_precondition_met": true,
+        "metric_values": [
+          false,
+          true
+        ],
+        "expression": true,
+        "all_checked_components_pass": false
+      }
+    },
+    {
+      "id": "reporting-chain-2.8.2-domain-passes-expression-fails",
+      "technical_version": "2.8.2",
+      "module": "ars",
+      "validation_code": "BV1853",
+      "filing_indicators": {
+        "S.26.13": true
+      },
+      "fact_context": {
+        "entity": "synthetic-insurer",
+        "period": "2026-12-31",
+        "unit": "not-applicable"
+      },
+      "binding_reference": "synthetic://qualified-reporting-component-chain",
+      "facts": [
+        {
+          "cell": "{S.26.13.01.14,R2030,C0440,Z0001}",
+          "context": {
+            "entity": "synthetic-insurer",
+            "period": "2026-12-31",
+            "unit": "not-applicable"
+          },
+          "fact": {
+            "qname": {
+              "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/RT",
+              "local_name": "x257"
+            }
+          }
+        },
+        {
+          "cell": "{S.26.13.01.14,R2040,C0440,Z0001}",
+          "context": {
+            "entity": "synthetic-insurer",
+            "period": "2026-12-31",
+            "unit": "not-applicable"
+          },
+          "fact": {
+            "text": ""
+          }
+        }
+      ],
+      "metric_codes": {
+        "{S.26.13.01.14,R2030,C0440,Z0001}": "ei2578",
+        "{S.26.13.01.14,R2040,C0440,Z0001}": "si2627"
+      },
+      "expected": {
+        "archived_rule_active": true,
+        "filing_precondition_met": true,
+        "metric_values": [
+          true,
+          true
+        ],
+        "expression": false,
+        "all_checked_components_pass": false
+      }
+    },
+    {
+      "id": "reporting-chain-2.8.2-hotfix-components-pass",
+      "technical_version": "2.8.2-hotfix",
+      "module": "ars",
+      "validation_code": "BV1853",
+      "filing_indicators": {
+        "S.26.13": true
+      },
+      "fact_context": {
+        "entity": "synthetic-insurer",
+        "period": "2026-12-31",
+        "unit": "not-applicable"
+      },
+      "binding_reference": "synthetic://qualified-reporting-component-chain",
+      "facts": [
+        {
+          "cell": "{S.26.13.01.14,R2030,C0440,Z0001}",
+          "context": {
+            "entity": "synthetic-insurer",
+            "period": "2026-12-31",
+            "unit": "not-applicable"
+          },
+          "fact": {
+            "qname": {
+              "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/RT",
+              "local_name": "x126"
+            }
+          }
+        },
+        {
+          "cell": "{S.26.13.01.14,R2040,C0440,Z0001}",
+          "context": {
+            "entity": "synthetic-insurer",
+            "period": "2026-12-31",
+            "unit": "not-applicable"
+          },
+          "fact": {
+            "text": "synthetic-other-peril"
+          }
+        }
+      ],
+      "metric_codes": {
+        "{S.26.13.01.14,R2030,C0440,Z0001}": "ei2578",
+        "{S.26.13.01.14,R2040,C0440,Z0001}": "si2627"
+      },
+      "expected": {
+        "archived_rule_active": true,
+        "filing_precondition_met": true,
+        "metric_values": [
+          true,
+          true
+        ],
+        "expression": true,
+        "all_checked_components_pass": true
+      }
+    },
+    {
+      "id": "reporting-chain-2.8.2-hotfix-domain-fails-expression-passes",
+      "technical_version": "2.8.2-hotfix",
+      "module": "ars",
+      "validation_code": "BV1853",
+      "filing_indicators": {
+        "S.26.13": true
+      },
+      "fact_context": {
+        "entity": "synthetic-insurer",
+        "period": "2026-12-31",
+        "unit": "not-applicable"
+      },
+      "binding_reference": "synthetic://qualified-reporting-component-chain",
+      "facts": [
+        {
+          "cell": "{S.26.13.01.14,R2030,C0440,Z0001}",
+          "context": {
+            "entity": "synthetic-insurer",
+            "period": "2026-12-31",
+            "unit": "not-applicable"
+          },
+          "fact": {
+            "qname": {
+              "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/RT",
+              "local_name": "x256"
+            }
+          }
+        },
+        {
+          "cell": "{S.26.13.01.14,R2040,C0440,Z0001}",
+          "context": {
+            "entity": "synthetic-insurer",
+            "period": "2026-12-31",
+            "unit": "not-applicable"
+          },
+          "fact": {
+            "text": "synthetic-other-peril"
+          }
+        }
+      ],
+      "metric_codes": {
+        "{S.26.13.01.14,R2030,C0440,Z0001}": "ei2578",
+        "{S.26.13.01.14,R2040,C0440,Z0001}": "si2627"
+      },
+      "expected": {
+        "archived_rule_active": true,
+        "filing_precondition_met": true,
+        "metric_values": [
+          false,
+          true
+        ],
+        "expression": true,
+        "all_checked_components_pass": false
+      }
+    },
+    {
+      "id": "reporting-chain-2.8.2-hotfix-domain-passes-expression-fails",
+      "technical_version": "2.8.2-hotfix",
+      "module": "ars",
+      "validation_code": "BV1853",
+      "filing_indicators": {
+        "S.26.13": true
+      },
+      "fact_context": {
+        "entity": "synthetic-insurer",
+        "period": "2026-12-31",
+        "unit": "not-applicable"
+      },
+      "binding_reference": "synthetic://qualified-reporting-component-chain",
+      "facts": [
+        {
+          "cell": "{S.26.13.01.14,R2030,C0440,Z0001}",
+          "context": {
+            "entity": "synthetic-insurer",
+            "period": "2026-12-31",
+            "unit": "not-applicable"
+          },
+          "fact": {
+            "qname": {
+              "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/RT",
+              "local_name": "x257"
+            }
+          }
+        },
+        {
+          "cell": "{S.26.13.01.14,R2040,C0440,Z0001}",
+          "context": {
+            "entity": "synthetic-insurer",
+            "period": "2026-12-31",
+            "unit": "not-applicable"
+          },
+          "fact": {
+            "text": ""
+          }
+        }
+      ],
+      "metric_codes": {
+        "{S.26.13.01.14,R2030,C0440,Z0001}": "ei2578",
+        "{S.26.13.01.14,R2040,C0440,Z0001}": "si2627"
+      },
+      "expected": {
+        "archived_rule_active": true,
+        "filing_precondition_met": true,
+        "metric_values": [
+          true,
+          true
+        ],
+        "expression": false,
+        "all_checked_components_pass": false
+      }
+    },
+    {
+      "id": "reporting-chain-2.10.0-components-pass",
+      "technical_version": "2.10.0",
+      "module": "ars",
+      "validation_code": "BV1853",
+      "filing_indicators": {
+        "S.26.13": true
+      },
+      "fact_context": {
+        "entity": "synthetic-insurer",
+        "period": "2027-12-31",
+        "unit": "not-applicable"
+      },
+      "binding_reference": "synthetic://qualified-reporting-component-chain",
+      "facts": [
+        {
+          "cell": "{S.26.13.01.14,R2030,C0440,Z0001}",
+          "context": {
+            "entity": "synthetic-insurer",
+            "period": "2027-12-31",
+            "unit": "not-applicable"
+          },
+          "fact": {
+            "qname": {
+              "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/RT",
+              "local_name": "x126"
+            }
+          }
+        },
+        {
+          "cell": "{S.26.13.01.14,R2040,C0440,Z0001}",
+          "context": {
+            "entity": "synthetic-insurer",
+            "period": "2027-12-31",
+            "unit": "not-applicable"
+          },
+          "fact": {
+            "text": "synthetic-other-peril"
+          }
+        }
+      ],
+      "metric_codes": {
+        "{S.26.13.01.14,R2030,C0440,Z0001}": "ei2578",
+        "{S.26.13.01.14,R2040,C0440,Z0001}": "si2627"
+      },
+      "expected": {
+        "archived_rule_active": true,
+        "filing_precondition_met": true,
+        "metric_values": [
+          true,
+          true
+        ],
+        "expression": true,
+        "all_checked_components_pass": true
+      }
+    },
+    {
+      "id": "reporting-chain-2.10.0-domain-fails-expression-passes",
+      "technical_version": "2.10.0",
+      "module": "ars",
+      "validation_code": "BV1853",
+      "filing_indicators": {
+        "S.26.13": true
+      },
+      "fact_context": {
+        "entity": "synthetic-insurer",
+        "period": "2027-12-31",
+        "unit": "not-applicable"
+      },
+      "binding_reference": "synthetic://qualified-reporting-component-chain",
+      "facts": [
+        {
+          "cell": "{S.26.13.01.14,R2030,C0440,Z0001}",
+          "context": {
+            "entity": "synthetic-insurer",
+            "period": "2027-12-31",
+            "unit": "not-applicable"
+          },
+          "fact": {
+            "qname": {
+              "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/RT",
+              "local_name": "x256"
+            }
+          }
+        },
+        {
+          "cell": "{S.26.13.01.14,R2040,C0440,Z0001}",
+          "context": {
+            "entity": "synthetic-insurer",
+            "period": "2027-12-31",
+            "unit": "not-applicable"
+          },
+          "fact": {
+            "text": "synthetic-other-peril"
+          }
+        }
+      ],
+      "metric_codes": {
+        "{S.26.13.01.14,R2030,C0440,Z0001}": "ei2578",
+        "{S.26.13.01.14,R2040,C0440,Z0001}": "si2627"
+      },
+      "expected": {
+        "archived_rule_active": true,
+        "filing_precondition_met": true,
+        "metric_values": [
+          false,
+          true
+        ],
+        "expression": true,
+        "all_checked_components_pass": false
+      }
+    },
+    {
+      "id": "reporting-chain-2.10.0-domain-passes-expression-fails",
+      "technical_version": "2.10.0",
+      "module": "ars",
+      "validation_code": "BV1853",
+      "filing_indicators": {
+        "S.26.13": true
+      },
+      "fact_context": {
+        "entity": "synthetic-insurer",
+        "period": "2027-12-31",
+        "unit": "not-applicable"
+      },
+      "binding_reference": "synthetic://qualified-reporting-component-chain",
+      "facts": [
+        {
+          "cell": "{S.26.13.01.14,R2030,C0440,Z0001}",
+          "context": {
+            "entity": "synthetic-insurer",
+            "period": "2027-12-31",
+            "unit": "not-applicable"
+          },
+          "fact": {
+            "qname": {
+              "namespace": "http://eiopa.europa.eu/xbrl/s2c/dict/dom/RT",
+              "local_name": "x257"
+            }
+          }
+        },
+        {
+          "cell": "{S.26.13.01.14,R2040,C0440,Z0001}",
+          "context": {
+            "entity": "synthetic-insurer",
+            "period": "2027-12-31",
+            "unit": "not-applicable"
+          },
+          "fact": {
+            "text": ""
+          }
+        }
+      ],
+      "metric_codes": {
+        "{S.26.13.01.14,R2030,C0440,Z0001}": "ei2578",
+        "{S.26.13.01.14,R2040,C0440,Z0001}": "si2627"
+      },
+      "expected": {
+        "archived_rule_active": true,
+        "filing_precondition_met": true,
+        "metric_values": [
+          true,
+          true
+        ],
+        "expression": false,
+        "all_checked_components_pass": false
+      }
+    }
+  ]
+}
