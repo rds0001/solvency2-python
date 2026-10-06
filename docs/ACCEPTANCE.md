@@ -1,6 +1,6 @@
 # Local acceptance — public-data edition
 
-Version: solvency2-python 0.5.0, import `solvency2`.
+Version: solvency2 0.5.0, import `solvency2`.
 This edition retains the accepted calculation baseline and statutory parameters.
 Its market examples are independently invented; no historical provider market
 archive is included. No GitHub or PyPI publication is performed by local checks.

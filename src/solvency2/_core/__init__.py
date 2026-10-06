@@ -242,7 +242,7 @@ from .underwriting import (health_premium_reserve_risk, health_premium_volume, h
                            premium_reserve_diversification, premium_reserve_risk)
 
 try:
-    __version__ = version("solvency2-python")
+    __version__ = version("solvency2")
 except PackageNotFoundError:
     __version__ = "uninstalled"
 

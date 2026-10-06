@@ -48,7 +48,7 @@ release: confirm the repository owner/URLs, retain the supplied license notices
 and repeat only checks affected by actual changes. Keep production market data,
 customer inputs and credentials outside the repository and release artifacts.
 The selected first version is 0.5.0 (0.5), project title Solvency 2, repository
-`rds0001/solvency2-python`. PyPI publication remains a separate step.
+`rds0001/solvency2-python`. The PyPI distribution and import are both `solvency2`.
 
 ## GitHub Actions
 
@@ -58,3 +58,17 @@ wheel in a separate dependency-free environment with network calls blocked by
 the smoke test. CI setup installs development tools; library execution is offline.
 Files are tracked as mode 100644 and scripts are invoked through Python, so no
 executable bits or platform-specific chmod setup are required on checkout.
+
+## Publish a version to PyPI
+
+The `Publish to PyPI` workflow (`publish.yml`) is started manually from `main`,
+not automatically on pushes or pull requests. It first calls the same complete
+test/build/offline-smoke workflow. Only its successfully checked wheel and sdist
+are transferred to the separate publishing job. That job uses the GitHub
+environment `pypi` and PyPI Trusted Publishing (OIDC); no PyPI API token is stored.
+
+Publisher configuration: project `solvency2`, GitHub owner `rds0001`, repository
+`solvency2-python`, workflow `publish.yml`, environment `pypi`. Project/version
+metadata comes from `pyproject.toml`; increment the version before publishing
+a new release. PyPI releases are immutable. Publication permissions are limited
+to the publishing job, which does not run the test suite or source build.

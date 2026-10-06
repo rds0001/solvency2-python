@@ -33,17 +33,17 @@ def main():
     installed = Path(s2.__file__).resolve()
     assert installed.is_relative_to(prefix), installed
     assert "solvency2_engine" not in sys.modules
-    assert metadata.version("solvency2-python") == s2.__version__ == "0.5.0"
-    package_metadata = metadata.metadata("solvency2-python")
+    assert metadata.version("solvency2") == s2.__version__ == "0.5.0"
+    package_metadata = metadata.metadata("solvency2")
     assert package_metadata["License"] == "GPL-3.0-or-later"
     assert "RiskDataScience GmbH" in package_metadata["Author-email"]
     assert "riskdatascience@web.de" in package_metadata["Author-email"]
     assert any(str(p).endswith("EIOPA_DPM_TAXONOMY_LICENSE_1_4.txt")
-               for p in metadata.files("solvency2-python"))
+               for p in metadata.files("solvency2"))
     rights = json.loads(files("solvency2").joinpath("resources/third_party_data_register.json").read_bytes())
     assert rights["market_data"]["kind"] == "SYNTHETIC_DEMO"
     assert rights["market_data"]["observed_market_data_included"] is False
-    assert not [r for r in metadata.requires("solvency2-python") or [] if "extra ==" not in r]
+    assert not [r for r in metadata.requires("solvency2") or [] if "extra ==" not in r]
     assert len(s2.__all__) == 421
     catalogue = api_catalogue()
     assert catalogue["calculations"] == 399 and len(catalogue["functions"]) == 432

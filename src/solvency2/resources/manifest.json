@@ -11,18 +11,18 @@
     "reference_reporting_string_cases.json": "f399e6560fbf6fee3acf94652760e6e0e959ad98ceecd2fa669fae682773b6c5",
     "reference_reporting_typed_cases.json": "91b498e70b6de916e528d63642dd8712ff6b8be403a8eeac8f333c188627f2e0",
     "reference_reporting_validation_status.json": "fc091ab1f71b0e4c6852b333d961644077f721d8965c95bf6e4ebba102df26cb",
-    "documentation/README.md": "fdaec1112cc5b8ce00a6ecb18a4513e59034b2f687b18737617ec330e45ef304",
+    "documentation/README.md": "bd5fddd82c74c301ea9cd037518959592161dcca284215d452fe7a21b0ca4bff",
     "documentation/DISCLAIMER.md": "dc0976ba035daed244f1155f5f77034f967a5152ab157cc0827a281724f92602",
     "documentation/SECURITY.md": "9f132ccb3b9a9c7dd253583d9b567edbc11d7402d59342c74808172616bed200",
     "documentation/THIRD_PARTY_NOTICES.md": "2f7b1cec95f44a9e8d84f0644ee6fc0a9d741aa8973003291766c440fa6e5eb8",
-    "documentation/CHANGELOG.md": "b265d72c45c3e155f22f25643b180776e0cec8267a722e3cb8771e5c3d354a72",
+    "documentation/CHANGELOG.md": "38e55c3a0fc7038848b16615299686efd321eec9343afc6279f9df6f382c489f",
     "documentation/API.md": "c80b64fd00a0b454a8771a8dc91ef4608d1201b50a8f984c27cb6012cbc24b78",
     "documentation/DATA.md": "63cf322e4c156868e6eeae35f4ad0f9393ef81303fbb6b78098488c0e2d16b09",
     "documentation/PARAMETERS.md": "90eb39a368f1f59ae06fb92f0d206049771c68877e42da12ef10ff83152bb0b6",
     "documentation/RECIPES.md": "07e1de25c372f032fa39cefda77c704c6967018389a4c251d2092cfde78cdf28",
     "documentation/LIMITATIONS.md": "407d6f908b3aeb202d1008c541069d57ba1d8154df79e7284087c883cdccb050",
-    "documentation/DEVELOPMENT.md": "062b965d36bc17bf4e730cb17407921ba7c51e5c0bf8b870eb6e9f2de02dcdd3",
-    "documentation/ACCEPTANCE.md": "190e80b3190f8b8bd25900d4016d2c8c56e1c2cbe341767f2aec61f027876bcf",
+    "documentation/DEVELOPMENT.md": "19d2f59c5c6a86ce1bb086b8d9eea9487a76e03a39e14e0fb74db0f140ebb4d6",
+    "documentation/ACCEPTANCE.md": "50745ad00cfe90ec35528906f946aaf21de39fc42836eb5ed39cb6b3b856b4ce",
     "third_party_data_register.json": "cb72a513a2c39e6fff89c06e917cd7faab6d8d34f1ec090abcc995ca4b9c98b9"
   }
 }

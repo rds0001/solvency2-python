@@ -51,18 +51,24 @@ The package contains the accepted calculation baseline: **399 calculations,
 integration portfolios**, plus additional reporting references. It preserves
 the baseline's explicit limitations. This is **not** regulatory certification,
 an internal model, an automatic filing service, or a claim of complete coverage
-of every legal requirement. See [scope and limitations](docs/LIMITATIONS.md).
+of every legal requirement. See [scope and limitations](https://github.com/rds0001/solvency2-python/blob/main/docs/LIMITATIONS.md).
 
 **Market-data edition: synthetic examples only.** No historical provider market
 archive is bundled. Demo lookups issue a warning and return `SYNTHETIC_DEMO`;
 their downstream workflow results retain that label. Supply your own local data
 for production calculations. Regulatory parameters and correlations are retained.
 
-## Install locally
+## Installation
 
 Python 3.10 or later is required; Python 3.10 is the tested release environment.
-The source is available on GitHub; this is not a claim of availability on PyPI.
-Install from a checkout (pip obtains build tooling if needed):
+PyPI package name: **solvency2**. For a published release:
+
+```sh
+python -m pip install solvency2
+```
+
+The import is also `solvency2`; the GitHub repository remains `solvency2-python`.
+Alternatively install from a checkout (pip obtains build tooling if needed):
 
 ```sh
 git clone https://github.com/rds0001/solvency2-python.git
@@ -71,10 +77,10 @@ python -m pip install .
 ```
 
 For an offline installation, first build or obtain the wheel as described in
-[local build instructions](docs/DEVELOPMENT.md), then install it without an index:
+[local build instructions](https://github.com/rds0001/solvency2-python/blob/main/docs/DEVELOPMENT.md), then install it without an index:
 
 ```sh
-python -m pip install --no-index --no-deps dist/solvency2_python-0.5.0-py3-none-any.whl
+python -m pip install --no-index --no-deps dist/solvency2-0.5.0-py3-none-any.whl
 ```
 
 The base runtime has **no third-party dependencies**. Only designated numerical
@@ -128,7 +134,7 @@ assert result.details["user_curve"]["input_hash"] == curve.input_hash
 Load the same factors with `load_discount_curve_json(path)` or
 `load_discount_curve_csv(path, ...)`. Explicit annual-effective spot rates and
 year fractions are also supported. There is no automatic interpolation or
-fallback to an archived curve. Read [input formats](docs/DATA.md).
+fallback to an archived curve. Read [input formats](https://github.com/rds0001/solvency2-python/blob/main/docs/DATA.md).
 
 ## Change a parameter without editing installed files
 
@@ -147,7 +153,7 @@ assert intangible_risk(100, context=base).value == 80
 ```
 
 Matrix entries, supported table cells and JSON scenario batches follow the
-same principle. Read [parameter overrides](docs/PARAMETERS.md) for paths,
+same principle. Read [parameter overrides](https://github.com/rds0001/solvency2-python/blob/main/docs/PARAMETERS.md) for paths,
 automatic matrix symmetry, validation and audit details.
 
 ## Find the right function
@@ -164,10 +170,10 @@ automatic matrix symmetry, validation and audit details.
 | Optional composition of existing formulas | `workflow` |
 
 All inherited functions are also available directly from `solvency2`.
-The [function reference](docs/API.md) contains signatures, method descriptions
+The [function reference](https://github.com/rds0001/solvency2-python/blob/main/docs/API.md) contains signatures, method descriptions
 and fixed reference examples. `solvency2.catalogue.api_catalogue()` supplies the
-same navigation as structured data. [Recipes](docs/RECIPES.md) show how to combine
-components; executable scripts and local files are in [examples](examples/).
+same navigation as structured data. [Recipes](https://github.com/rds0001/solvency2-python/blob/main/docs/RECIPES.md) show how to combine
+components; executable scripts and local files are in [examples](https://github.com/rds0001/solvency2-python/tree/main/examples/).
 Installed-wheel users can read the guides entirely offline with
 `from solvency2.catalogue import documentation; print(documentation("DATA"))`.
 Use `documentation("API")` for the full function reference.
@@ -193,17 +199,17 @@ versions deliberately. Users qualify their own inputs for the selected purpose.
 
 ## Documentation and local development
 
-- [Context, results, errors and limitations](docs/LIMITATIONS.md)
-- [Local inputs and units](docs/DATA.md)
-- [Scenarios and parameter changes](docs/PARAMETERS.md)
-- [Practical recipes and reference replay](docs/RECIPES.md)
-- [Full function reference](docs/API.md)
-- [Build and acceptance instructions](docs/DEVELOPMENT.md)
-- [Completed local acceptance](docs/ACCEPTANCE.md)
-- [Third-party data notices](THIRD_PARTY_NOTICES.md)
+- [Context, results, errors and limitations](https://github.com/rds0001/solvency2-python/blob/main/docs/LIMITATIONS.md)
+- [Local inputs and units](https://github.com/rds0001/solvency2-python/blob/main/docs/DATA.md)
+- [Scenarios and parameter changes](https://github.com/rds0001/solvency2-python/blob/main/docs/PARAMETERS.md)
+- [Practical recipes and reference replay](https://github.com/rds0001/solvency2-python/blob/main/docs/RECIPES.md)
+- [Full function reference](https://github.com/rds0001/solvency2-python/blob/main/docs/API.md)
+- [Build and acceptance instructions](https://github.com/rds0001/solvency2-python/blob/main/docs/DEVELOPMENT.md)
+- [Completed local acceptance](https://github.com/rds0001/solvency2-python/blob/main/docs/ACCEPTANCE.md)
+- [Third-party data notices](https://github.com/rds0001/solvency2-python/blob/main/THIRD_PARTY_NOTICES.md)
 
-License: **GPL-3.0-or-later**, see [LICENSE](LICENSE) and [NOTICE](NOTICE).
+License: **GPL-3.0-or-later**, see [LICENSE](https://github.com/rds0001/solvency2-python/blob/main/LICENSE) and [NOTICE](https://github.com/rds0001/solvency2-python/blob/main/NOTICE).
 Author/contact: RiskDataScience GmbH, **riskdatascience@web.de**.
-See [third-party attributions and data licenses](THIRD_PARTY_NOTICES.md) for the
+See [third-party attributions and data licenses](https://github.com/rds0001/solvency2-python/blob/main/THIRD_PARTY_NOTICES.md) for the
 EU regulatory material and EIOPA reporting extracts. Market examples and original
 library code are by RiskDataScience GmbH. Warranty terms are in LICENSE.

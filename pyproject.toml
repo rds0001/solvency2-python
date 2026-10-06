@@ -3,7 +3,7 @@ requires = ["setuptools>=69", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "solvency2-python"
+name = "solvency2"
 version = "0.5.0"
 description = "Offline, traceable Solvency II formulas, parameters and synthetic references"
 readme = "README.md"

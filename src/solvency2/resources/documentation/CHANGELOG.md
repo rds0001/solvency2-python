@@ -4,6 +4,8 @@
 
 - Release 0.5 and project title Solvency 2; repository `rds0001/solvency2-python`.
 - GitHub Actions tests, build and isolated offline installation smoke.
+- PyPI distribution name `solvency2`; publication through the manually triggered
+  GitHub workflow `publish.yml`, using PyPI Trusted Publishing without API tokens.
 - Public-data edition: invented market demos, explicit local user-data inputs,
   runtime demo warnings and propagated demo labels. No historical market archive.
 - Retained regulatory parameters and licensed reporting extracts with attribution,
@@ -21,4 +23,4 @@
   symmetric-matrix override audit and validation.
 - Added English user guides, a linked function/reference-case catalogue,
   executable examples and standalone package acceptance checks.
-- GPL-3.0-or-later; RiskDataScience GmbH. PyPI publication is a separate step.
+- GPL-3.0-or-later; RiskDataScience GmbH.
